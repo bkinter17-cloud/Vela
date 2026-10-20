@@ -321,7 +321,7 @@
     <string name="settings_house_numbers_near">Only when zoomed right in</string>
     <string name="settings_house_numbers_normal">Normal</string>
     <string name="settings_house_numbers_far">Further out</string>
-    <string name="settings_house_numbers_hint">House numbers come from OpenStreetMap and, in the US, OpenAddresses. A building that has no number in either shows none, even though search still finds the address through Google.</string>
+    <string name="settings_house_numbers_hint">House numbers come from OpenStreetMap. A building that has no number there shows none.</string>
     <string name="settings_show_pois">Show places</string>
     <string name="settings_show_pois_hint">Business and place icons on the browse map. Off = a clean map; searched places still show.</string>
     <string name="settings_places_source">Place icons on the map</string>
@@ -337,7 +337,7 @@
     <string name="settings_places_lookup">Look up tapped places on Google</string>
     <string name="settings_places_lookup_hint">Tapping a place fetches its hours, reviews and photos from Google, and Iraq Maps remembers the match so the next tap is instant. Off = a tapped place shows only what Iraq Maps\' data has (name, type, address, phone, website) and nothing about the tap reaches Google. Search and directions still use Google.</string>
     <string name="settings_places_source_more_title">Where Iraq Maps\' place data comes from</string>
-    <string name="settings_places_source_more_body">Iraq Maps\' place data is Overture Maps, an open dataset of businesses maintained by Meta, Microsoft and others, plus AllThePlaces, which collects chains from their own store locators, with OpenStreetMap correcting where each shop actually sits. Iraq Maps bakes the three into map tiles and serves them from its own GitHub repository, so nothing about where you look goes to Meta or Google.\n\nIt streams in as you browse and downloads with a region for offline use. Where Iraq Maps has no data for an area yet, the map falls back to Google.\n\nSearch, place details, hours, reviews and photos always come from Google, whichever option you pick.</string>
+    <string name="settings_places_source_more_body">Iraq Maps\' place data is Overture Maps, an open dataset of businesses maintained by Meta, Microsoft and others, plus AllThePlaces, which collects chains from their own store locators, with OpenStreetMap correcting where each shop actually sits. It is baked into map tiles and streams in as you browse, and it downloads with a region for offline use. Where no data exists for an area yet, no place icons are shown. Coverage of Iraq has not been verified yet.</string>
     <string name="settings_show_civic">Parks, schools and civic places</string>
     <string name="settings_show_civic_hint">The non-business tier of place icons. Off shows businesses only.</string>
     <string name="settings_show_transit_stops">Transit stops</string>
@@ -745,13 +745,13 @@
     <string name="steps_continue">Continue</string>
 
     <!-- welcome: WelcomeScreen.kt -->
-    <string name="welcome_tagline">Maps &amp; navigation, degoogled.</string>
+    <string name="welcome_tagline">Maps &amp; navigation for Iraq.</string>
     <string name="welcome_feature_no_tracking_title">No tracking</string>
-    <string name="welcome_feature_private_body">No account, no ads, no analytics, and no Iraq Maps server.</string>
-    <string name="welcome_feature_places_title">Real places &amp; routes</string>
-    <string name="welcome_feature_places_body">Live search, reviews, photos, transit, and traffic-aware directions.</string>
+    <string name="welcome_feature_private_body">No account, no ads and no analytics.</string>
+    <string name="welcome_feature_places_title">Open map data</string>
+    <string name="welcome_feature_places_body">Search, places and directions built on OpenStreetMap data and open routing services. No Google services.</string>
     <string name="welcome_feature_open_source_title">Free &amp; open source</string>
-    <string name="welcome_feature_open_source_body">GPLv3, built for GrapheneOS and other de-Googled phones.</string>
+    <string name="welcome_feature_open_source_body">GPLv3, based on the open-source Vela project.</string>
     <string name="welcome_get_started">Get started</string>
     <string name="welcome_continue">Continue</string>
     <string name="welcome_cameras_title">Plate cameras</string>
@@ -1074,8 +1074,8 @@
     <string name="settings_voice_volume_louder">Louder</string>
     <string name="settings_voice_volume_loudest">Loudest</string>
     <string name="settings_voice_volume_hint">How loud spoken directions play over your media. Louder tiers apply to the Iraq Maps voice; system voices can only be made softer.</string>
-    <string name="place_avoid_not_honored">These routes may still use tolls, highways, or ferries: Google could not be reached to route around them, and the open router cannot. In a downloaded area Iraq Maps avoids them offline.</string>
-    <string name="settings_lists_export_hint">Back up your lists to a file, or restore them on another device. Import also takes a list from Google Takeout\'s Saved folder (one CSV per list); each place in it is looked up, so it needs a connection.</string>
+    <string name="place_avoid_not_honored">These routes may still use tolls, highways or ferries: the open router cannot route around them here. In a downloaded area Iraq Maps avoids them offline.</string>
+    <string name="settings_lists_export_hint">Back up your lists to a file, or restore them on another device.</string>
     <string name="settings_lists_imported">Imported %1$d list(s)</string>
     <string name="settings_takeout_list_default">Imported list</string>
     <string name="settings_takeout_progress">Looking up place %1$d of %2$d</string> <!-- format -->
@@ -1198,7 +1198,7 @@
     <string name="map_satellite_attribution_google" translatable="false">Google</string>
     <string name="map_osm_attribution" translatable="false">© OpenStreetMap</string>
     <string name="settings_map_data">Map data</string>
-    <string name="settings_map_data_hint">The map, its streets, labels and house numbers are OpenStreetMap data, available under the Open Database License, served as vector tiles by OpenFreeMap. The businesses on the map in covered regions are places data from the Overture Maps Foundation (sourced from Meta and Microsoft), available under the Community Data License Agreement, Permissive 2.0. Place details, reviews, routing and traffic come from Google. Satellite imagery is from Esri and Google. How the voice says some 3,500 place names comes from English Wikipedia and its contributors, under CC BY-SA 4.0.</string>
+    <string name="settings_map_data_hint">The map, its streets, labels and house numbers are OpenStreetMap data (© OpenStreetMap contributors), available under the Open Database License, served as vector tiles by OpenFreeMap. The businesses on the map in covered regions are places data from the Overture Maps Foundation (sourced from Meta and Microsoft), available under the Community Data License Agreement, Permissive 2.0. Search and routing use open services built on OpenStreetMap data. Satellite imagery is from Esri. How the voice says some 3,500 place names comes from English Wikipedia and its contributors, under CC BY-SA 4.0.</string>
     <string name="settings_map_data_button">OpenStreetMap copyright</string>
     <string name="settings_map_data_overture_button">Overture Maps license</string>
     <string name="settings_map_data_fuel_gb">UK fuel prices come from the UK government\'s Fuel Finder, republished by matthewgall/fuelfinder-archive on GitHub. Contains public sector information licensed under the Open Government Licence v3.0.</string>
@@ -1258,9 +1258,9 @@
     <string name="settings_hub_search_sub">Voice search, speech models and quick search buttons</string>
     <string name="settings_hub_offline_sub">Offline maps, routing, places</string>
     <string name="settings_hub_saved_sub">Your lists, export, parking history</string>
-    <string name="settings_hub_privacy_sub">What Google receives, clearing history</string>
+    <string name="settings_hub_privacy_sub">Clearing history</string>
     <string name="settings_hub_diagnostics_sub">Crash reports, trips, demo mode, experiments</string>
-    <string name="settings_hub_about_sub">Version, updates, support</string>
+    <string name="settings_hub_about_sub">Version and project links</string>
     <string name="settings_theme_amoled">AMOLED black</string>
     <string name="settings_map_theme_title">Map</string>
     <string name="settings_map_theme_follow">Same as the app</string>
@@ -1318,8 +1318,8 @@
     <string name="settings_map_names_local_english">Local and English</string>
     <string name="settings_map_names_hint">Romanized names are made by machine where OpenStreetMap has no English name, and read badly in Hebrew and some other scripts. The app language and the voice do not change.</string>
     <string name="settings_project">Project</string>
-    <string name="settings_project_hint">The website has the overview and the press page. Source code, bug reports and discussions are on GitHub.</string>
-    <string name="settings_project_site_button">Website</string>
+    <string name="settings_project_hint">The website and source code of the original Vela project, which Iraq Maps is built on.</string>
+    <string name="settings_project_site_button">Original project website</string>
     <string name="settings_project_github_button">Original project: Vela on GitHub</string>
     <string name="mapvm_rechecking_connection">Checking the connection…</string>
     <string name="mapvm_back_online">Back online</string>
@@ -1378,10 +1378,10 @@
     <string name="root_voice_tts_title">Speak directions aloud</string>
     <string name="root_voice_tts_desc">Spoken turn-by-turn. Recommended. One-time %1$d MB download.</string>  <!-- format -->
     <string name="root_voice_mic_title">Search by speaking</string>
-    <string name="root_voice_mic_desc">Dictate searches without typing. Without it, the mic uses Google. One-time %1$d MB download.</string>  <!-- format -->
+    <string name="root_voice_mic_desc">Dictate searches without typing. Without it, the mic uses your phone\'s default speech recognizer. One-time %1$d MB download.</string>  <!-- format -->
     <string name="root_voice_none_picked">Tick an option first, or choose Not now.</string>
     <string name="root_offline_title">Offline maps</string>
-    <string name="root_offline_body">Iraq Maps gets places, search and directions from Google, so with no signal only areas you have downloaded will work. Set up an area now so you are covered when you lose service.</string>
+    <string name="root_offline_body">Iraq Maps gets places, search and directions online, so with no signal only areas you have downloaded will work. Set up an area now so you are covered when you lose service.</string>
     <string name="root_offline_setup">Set up offline</string>
     <string name="mapvm_stop_added">Stop added</string>
  <!-- format -->

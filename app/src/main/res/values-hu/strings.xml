@@ -456,12 +456,8 @@
     <string name="steps_live_traffic">élő forgalom</string>
     <string name="steps_close_cd">Lépések bezárása</string>
     <string name="steps_continue">Tovább</string>
-    <string name="welcome_tagline">Térképek és navigáció, degoogled.</string>
     <string name="welcome_feature_no_tracking_title">Nincs nyomkövetés</string>
-    <string name="welcome_feature_places_title">Valódi helyek és útvonalak</string>
-    <string name="welcome_feature_places_body">Élő keresés, vélemények, fotók, tömegközlekedés és forgalomfüggő útvonaltervezés.</string>
     <string name="welcome_feature_open_source_title">Ingyenes és nyílt forráskódú</string>
-    <string name="welcome_feature_open_source_body">GPLv3, GrapheneOS-hez és más degoogled telefonokhoz készült.</string>
     <string name="welcome_get_started">Kezdjük</string>
     <string name="welcome_donate_title">Tetszik a Iraq Maps?</string>
     <string name="welcome_donate_body">A Iraq Maps ingyenes és reklámmentes, szűkös keretből épül. Ha hasznosnak bizonyult, egy kis egyszeri adomány segít fenntartani. Teljesen opcionális, és csak most kérdezzük meg. A Beállítások menüben mindig van egy Támogatás pont is.</string>
@@ -658,8 +654,6 @@
     <string name="settings_voice_volume_louder">Hangosabb</string>
     <string name="settings_voice_volume_loudest">Leghangosabb</string>
     <string name="settings_voice_volume_hint">Milyen hangosan szól a hangos útvonalvezetés a médialejátszás felett. A hangosabb szintek csak a Iraq Maps hangra vonatkoznak; a rendszerhangok csak halkíthatók.</string>
-    <string name="place_avoid_not_honored">Ezek az útvonalak továbbra is tartalmazhatnak díjköteles utakat, autópályákat vagy kompokat: a Google nem volt elérhető a kikerülésükhöz, a nyílt útvonaltervező pedig erre nem képes. Letöltött területen a Iraq Maps offline is elkerüli őket.</string>
-    <string name="settings_lists_export_hint">Mentsd el a listáidat egy fájlba, vagy állítsd vissza egy másik eszközön.</string>
     <string name="settings_lists_imported">%1$d lista importálva</string>
     <string name="settings_places_imported">%1$d hely importálva</string>
     <string name="settings_no_lists">Még nincs exportálandó lista</string>
@@ -718,10 +712,8 @@
     <string name="root_voice_tts_title">Útvonal felolvasása hangosan</string>
     <string name="root_voice_tts_desc">Hangos útvonalvezetés. Ajánlott. Egyszeri %1$d MB-os letöltés.</string>
     <string name="root_voice_mic_title">Keresés beszéddel</string>
-    <string name="root_voice_mic_desc">Diktáld be a kereséseket gépelés nélkül. Enélkül a mikrofon a Google-t használja. Egyszeri %1$d MB-os letöltés.</string>
     <string name="root_voice_none_picked">Előbb pipálj be egy opciót, vagy válaszd a Most nem lehetőséget.</string>
     <string name="root_offline_title">Offline térképek</string>
-    <string name="root_offline_body">A Iraq Maps a Google-től kapja a helyeket, kereséseket és útvonalakat, így jelzés nélkül csak a letöltött területek fognak működni. Állíts be most egy területet, hogy fel legyél készülve, ha elveszíted a szolgáltatást.</string>
     <string name="root_offline_setup">Offline beállítása</string>
     <string name="mapvm_stop_added">Megálló hozzáadva</string>
     <string name="voice_error_title">A hangkeresés nem indult el</string>
@@ -768,9 +760,7 @@
     <string name="settings_hub_search_sub">Hangkeresés és beszédmodellek</string>
     <string name="settings_hub_offline_sub">Offline térképek, útvonaltervezés, helyek</string>
     <string name="settings_hub_saved_sub">Listáid, exportálás, parkolási előzmények</string>
-    <string name="settings_hub_privacy_sub">Mit kap a Google, előzmények törlése</string>
     <string name="settings_hub_diagnostics_sub">Összeomlási jelentések, utak, demó mód, kísérletek</string>
-    <string name="settings_hub_about_sub">Verzió, frissítések, támogatás</string>
     <string name="settings_theme_amoled">AMOLED fekete</string>
     <string name="settings_traffic_lights">Közlekedési lámpa útmutatás</string>
     <string name="settings_traffic_lights_hint">Hangos tereptárgy-jelzések: menj el a lámpa mellett, aztán kanyarodj. Csak angolul, alapból kikapcsolva.</string>
@@ -850,7 +840,6 @@
     <string name="settings_house_numbers_near">Csak erős nagyításnál</string>
     <string name="settings_house_numbers_normal">Normál</string>
     <string name="settings_house_numbers_far">Távolabbról is</string>
-    <string name="settings_house_numbers_hint">A házszámok az OpenStreetMap-ből, az Egyesült Államokban pedig az OpenAddresses-ből származnak. Amelyik épülethez egyikben sincs szám, annál nem jelenik meg semmi, még akkor sem, ha a keresés a Google-n keresztül továbbra is megtalálja a címet.</string>
     <string name="settings_places_source">Helyikonok a térképen</string>
     <string name="settings_places_source_open">Iraq Maps-adat</string>
     <string name="settings_places_source_google">Google</string>
@@ -863,7 +852,6 @@
     <string name="settings_places_lookup">Megkoppintott helyek keresése a Google-ben</string>
     <string name="settings_places_lookup_hint">Egy helyre koppintva a Iraq Maps lekéri a nyitvatartását, véleményeit és fotóit a Google-től, és megjegyzi a találatot, így a következő koppintás azonnali. Ki = a megkoppintott hely csak azt mutatja, ami a Iraq Maps adatában szerepel (név, típus, cím, telefonszám, weboldal), és semmi nem jut el a koppintásról a Google-höz. A keresés és az útvonaltervezés továbbra is a Google-t használja.</string>
     <string name="settings_places_source_more_title">Honnan származik a Iraq Maps helyadata</string>
-    <string name="settings_places_source_more_body">A Iraq Maps helyadata az Overture Maps, egy nyílt üzleti adatbázis, amit a Meta, a Microsoft és mások tartanak karban. A Iraq Maps a saját GitHub-tárolójából szolgálja ki, így semmi nem jut el a Metához vagy a Google-höz arról, hol nézelődsz.\n\nBöngészés közben folyamatosan töltődik, és egy régióval együtt offline használatra is letölthető. Ahol a Velának még nincs adata egy területről, ott a térkép a Google-re vált vissza.\n\nA keresés, a helyek részletei, a nyitvatartás, a vélemények és a fotók mindig a Google-től jönnek, bármelyik lehetőséget választod.</string>
     <string name="settings_clear_history">Előzmények törlése</string>
     <string name="settings_clear_history_hint">Legutóbbi keresések, legutóbbi helyek, parkolási előzmények és rögzített utak. A mentett helyek és listák megmaradnak.</string>
     <string name="settings_clear_history_action">Törlés</string>
@@ -944,7 +932,6 @@
     <string name="voice_cmd_eta">Érkezési idő, vezetés közben</string>
     <string name="voice_cmd_hint">Kimondva vagy a keresősávba írva is működnek, az alkalmazás nyelvén vagy angolul. Minden más sima keresés lesz.</string>
     <string name="settings_map_data">Térképadatok</string>
-    <string name="settings_map_data_hint">A térkép, az utcái, feliratai és házszámai OpenStreetMap-adatok, amelyek az Open Database License alatt érhetők el, vektorcsempeként az OpenFreeMap szolgálja ki. A lefedett régiókban a térképen látható üzletek az Overture Maps Foundation helyadatai (a Meta és a Microsoft forrásaiból), amelyek a Community Data License Agreement, Permissive 2.0 alatt érhetők el. A helyek részletei, a vélemények, az útvonaltervezés és a forgalom a Google-től származnak. A műholdképek az Esritől és a Google-től valók.</string>
     <string name="settings_map_data_button">OpenStreetMap szerzői jog</string>
     <string name="settings_map_data_overture_button">Overture Maps licenc</string>
     <string name="settings_theme_auto">Nappal és éjszaka</string>
@@ -1275,7 +1262,6 @@
     <string name="settings_map_names_local_english">Helyi és angol</string>
     <string name="settings_map_names_hint">Az átírt neveket gép készíti ott, ahol az OpenStreetMapen nincs angol név, és héberül meg néhány más írásban rosszul olvashatók. Az alkalmazás nyelve és a hang nem változik.</string>
     <string name="settings_project">Projekt</string>
-    <string name="settings_project_hint">A forráskód, a hibajelentések és a beszélgetések a GitHubon vannak.</string>
     <string name="mapvm_rechecking_connection">Kapcsolat ellenőrzése…</string>
     <string name="mapvm_back_online">Újra online</string>
     <string name="mapvm_still_offline">Még mindig offline. A Iraq Maps azonnal észreveszi, amint visszatér a kapcsolat.</string>

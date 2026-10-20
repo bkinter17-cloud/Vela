@@ -157,7 +157,6 @@
     <string name="settings_map_names_local_english">Herêmî û îngilîzî</string>
     <string name="settings_map_names_hint">Navên bi tîpên latînî ji aliyê makîneyê ve çêdibin li cihên ku OpenStreetMap navê îngilîzî tune, û di îbranî û hin nivîsên din de xirab tên xwendin. Zimanê sepanê û deng naguherin.</string>
     <string name="settings_project">Proje</string>
-    <string name="settings_project_hint">Koda çavkanî, raporên çewtiyan û gotûbêj li ser GitHub in.</string>
     <string name="nav_end">Biqedîne</string>
     <string name="settings_font">Cûrenivîs</string>
     <string name="settings_voice_variant_go">Biçe</string>

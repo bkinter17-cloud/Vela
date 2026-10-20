@@ -347,12 +347,8 @@
     <string name="steps_live_traffic">Live-Verkehr</string>
     <string name="steps_close_cd">Wegbeschreibung schließen</string>
     <string name="steps_continue">Weiter</string>
-    <string name="welcome_tagline">Karten &amp; Navigation, degoogelt.</string>
     <string name="welcome_feature_no_tracking_title">Kein Tracking</string>
-    <string name="welcome_feature_places_title">Echte Orte &amp; Routen</string>
-    <string name="welcome_feature_places_body">Live-Suche, Rezensionen, Fotos, ÖPNV und verkehrsabhängige Routen.</string>
     <string name="welcome_feature_open_source_title">Kostenlos &amp; quelloffen</string>
-    <string name="welcome_feature_open_source_body">GPLv3, entwickelt für GrapheneOS und andere degoogelte Telefone.</string>
     <string name="welcome_get_started">Los geht’s</string>
     <string name="welcome_donate_title">Gefällt Ihnen Iraq Maps?</string>
     <string name="welcome_donate_body">Iraq Maps ist kostenlos und werbefrei, mit minimalen Mitteln entwickelt. Wenn es Ihnen nützlich geworden ist, hilft eine kleine einmalige Spende, es am Laufen zu halten, völlig freiwillig, und nur dieses eine Mal wird danach gefragt. In den Einstellungen gibt es außerdem immer einen Eintrag zum Unterstützen.</string>
@@ -516,7 +512,6 @@
     <string name="map_list_saved">„%1$s“ in deinen Listen gespeichert</string>
     <string name="settings_update_nightly">Nightly-Builds einschließen</string>
     <string name="settings_update_nightly_hint">Auf den neuesten Nightly (Vorabversion) aktualisieren statt nur auf stabile Versionen. Nightlies sind aktueller, aber weniger getestet.</string>
-    <string name="settings_lists_export_hint">Sichern Sie Ihre Listen in einer Datei oder stellen Sie sie auf einem anderen Gerät wieder her. Beim Importieren kann auch eine Liste aus dem Ordner „Gespeichert“ von Google Takeout übernommen werden (eine CSV-Datei pro Liste); dabei wird jeder Ort in der Liste nachgeschlagen, daher ist eine Internetverbindung erforderlich.</string>
     <string name="settings_lists_imported">%1$d Liste(n) importiert</string>
     <string name="settings_places_imported">%1$d Ort(e) importiert</string>
     <!-- format -->
@@ -608,9 +603,7 @@
     <string name="settings_hub_search_sub">Sprachsuche und Sprachmodelle</string>
     <string name="settings_hub_offline_sub">Offline-Karten, Routing, Orte</string>
     <string name="settings_hub_saved_sub">Deine Listen, Export, Parkverlauf</string>
-    <string name="settings_hub_privacy_sub">Was Google erhält, Verlauf löschen</string>
     <string name="settings_hub_diagnostics_sub">Absturzberichte, Fahrten, Demomodus, Experimente</string>
-    <string name="settings_hub_about_sub">Version, Updates, Unterstützung</string>
     <string name="settings_theme_amoled">AMOLED-Schwarz</string>
     <string name="place_review_more">Mehr</string>
     <string name="place_review_less">Weniger</string>
@@ -633,11 +626,9 @@
     <string name="root_voice_tts_desc">Sprachansagen für jede Abbiegung. Empfohlen. Einmaliger Download von %1$d MB.</string>
     <!-- format -->
     <string name="root_voice_mic_title">Per Sprache suchen</string>
-    <string name="root_voice_mic_desc">Suchanfragen diktieren statt tippen. Ohne dies nutzt das Mikrofon Google. Einmaliger Download von %1$d MB.</string>
     <!-- format -->
     <string name="root_voice_none_picked">Wähle eine Option oder tippe auf Jetzt nicht.</string>
     <string name="root_offline_title">Offline-Karten</string>
-    <string name="root_offline_body">Iraq Maps bezieht Orte, Suche und Routen von Google. Ohne Signal funktionieren daher nur Gebiete, die du heruntergeladen hast. Richte jetzt ein Gebiet ein, damit du abgesichert bist, wenn der Empfang wegfällt.</string>
     <string name="root_offline_setup">Offline einrichten</string>
     <string name="mapvm_stop_added">Zwischenstopp hinzugefügt</string>
     <string name="shortcut_home">Zuhause</string>
@@ -742,7 +733,6 @@
     <string name="settings_house_numbers_near">Nur bei starkem Zoom</string>
     <string name="settings_house_numbers_normal">Normal</string>
     <string name="settings_house_numbers_far">Auch weiter herausgezoomt</string>
-    <string name="settings_house_numbers_hint">Hausnummern stammen aus OpenStreetMap und in den USA aus OpenAddresses. Ein Gebäude, das in beiden keine Nummer hat, zeigt keine, auch wenn die Suche die Adresse über Google trotzdem findet.</string>
     <string name="settings_show_pois">Orte anzeigen</string>
     <string name="settings_show_pois_hint">Symbole für Geschäfte und Orte auf der Karte beim Stöbern. Aus = eine aufgeräumte Karte; gesuchte Orte erscheinen weiterhin.</string>
     <string name="settings_places_source">Ortssymbole auf der Karte</string>
@@ -757,7 +747,6 @@
     <string name="settings_places_lookup">Angetippte Orte bei Google nachschlagen</string>
     <string name="settings_places_lookup_hint">Beim Antippen eines Ortes werden Öffnungszeiten, Rezensionen und Fotos von Google geladen, und Iraq Maps merkt sich die Zuordnung, sodass das nächste Antippen sofort geht. Aus = ein angetippter Ort zeigt nur das, was Iraq Maps\' Daten hergeben (Name, Art, Adresse, Telefon, Website), und nichts über das Antippen erreicht Google. Suche und Routen nutzen weiterhin Google.</string>
     <string name="settings_places_source_more_title">Woher Iraq Maps\' Ortsdaten stammen</string>
-    <string name="settings_places_source_more_body">Iraq Maps\' Ortsdaten sind Overture Maps, ein offener Datensatz von Geschäften, der von Meta, Microsoft und anderen gepflegt wird. Iraq Maps liefert ihn aus seinem eigenen GitHub-Repository aus, sodass nichts darüber, wo Sie hinschauen, an Meta oder Google geht.\n\nSie werden beim Stöbern nachgeladen und lassen sich mit einer Region für die Offline-Nutzung herunterladen. Wo Iraq Maps für ein Gebiet noch keine Daten hat, greift die Karte auf Google zurück.\n\nSuche, Ortsdetails, Öffnungszeiten, Rezensionen und Fotos kommen immer von Google, egal welche Option Sie wählen.</string>
     <string name="settings_show_civic">Parks, Schulen und öffentliche Einrichtungen</string>
     <string name="settings_show_civic_hint">Die Ebene der Ortssymbole ohne Geschäfte. Aus = nur Geschäfte.</string>
     <string name="settings_show_transit_stops">ÖPNV-Haltestellen</string>
@@ -873,7 +862,6 @@
     <string name="voice_cmd_eta">Ankunftszeit, während der Fahrt</string>
     <string name="voice_cmd_hint">Das klappt gesprochen oder in die Suchleiste getippt, in der App-Sprache oder auf Englisch. Alles andere wird normal gesucht.</string>
     <string name="settings_map_data">Kartendaten</string>
-    <string name="settings_map_data_hint">Die Karte, ihre Straßen, Beschriftungen und Hausnummern sind OpenStreetMap-Daten, die unter der Open Database License verfügbar sind und von OpenFreeMap als Vektorkacheln bereitgestellt werden. Die auf der Karte in den abgedeckten Regionen angezeigten Unternehmen sind Ortsdaten der Overture Maps Foundation (mit Quellenangabe von Meta und Microsoft), die unter der Community Data License Agreement, Permissive 2.0, verfügbar sind. Ortsdetails, Bewertungen, Routenplanung und Verkehrsinformationen stammen von Google. Die Satellitenbilder stammen von Esri und Google. Die Aussprache von rund 3.500 Ortsnamen stammt aus der englischen Wikipedia und von deren Mitwirkenden und steht unter der CC BY-SA 4.0-Lizenz.</string>
     <string name="settings_map_data_button">OpenStreetMap-Urheberrecht</string>
     <string name="settings_map_data_overture_button">Overture Maps-Lizenz</string>
     <string name="settings_theme_auto">Tag und Nacht</string>
@@ -1024,7 +1012,6 @@
     <string name="settings_speech_preload_hint">Lädt das Sprachsuchmodell beim Öffnen von Iraq Maps, damit das Mikrofon sofort zuhört. Es belegt etwa 300 MB, bis zwei ruhige Minuten vergangen sind. Wenn aus, wird es geladen, sobald Sie ins Suchfeld tippen. Standardmäßig an auf Telefonen mit etwa 8 GB Arbeitsspeicher oder mehr.</string>
     <string name="settings_google_free_links">Geteilte Google Maps-Links öffnen</string>
     <string name="settings_google_free_links_hint">Ein kurzer Google Maps-Link (maps.app.goo.gl) verrät nicht, wohin er führt. Wenn an, fragt Iraq Maps einmal ohne Cookies bei Googles Link-Kürzer nach und öffnet den Ort mit den offenen Quellen. Vollständige google.com/maps-Links öffnen sich ohne Nachfrage. Geteilte Listen brauchen weiterhin Google.</string>
-    <string name="place_avoid_not_honored">Diese Routen nutzen eventuell trotzdem Mautstraßen, Autobahnen oder Fähren: Google war nicht erreichbar, um sie zu umfahren, und der offene Routing-Dienst kann das nicht. In einem heruntergeladenen Gebiet vermeidet Iraq Maps sie offline.</string>
     <string name="settings_road_label_inbar">In der unteren Leiste</string>
     <string name="settings_faster_auto">Schnellere Routen automatisch nehmen</string>
     <string name="settings_faster_auto_hint">Wenn unterwegs eine schnellere Route auftaucht, wird sie genommen, sofern Sie nicht innerhalb weniger Sekunden reagieren. Ist dies aus, wird ein unbeantwortetes Angebot stattdessen verworfen. So oder so bleibt das Angebot nie wartend auf der Karte.</string>
@@ -1304,7 +1291,6 @@
     <string name="settings_map_names_local_english">Lokal und Englisch</string>
     <string name="settings_map_names_hint">Umschriebene Namen entstehen maschinell, wo OpenStreetMap keinen englischen Namen hat, und lesen sich auf Hebräisch und in einigen anderen Schriften schlecht. App-Sprache und Stimme ändern sich nicht.</string>
     <string name="settings_project">Projekt</string>
-    <string name="settings_project_hint">Die Website enthält eine Übersicht und eine Presseseite. Quellcode, Fehlerberichte und Diskussionen finden Sie auf GitHub.</string>
     <string name="mapvm_rechecking_connection">Verbindung wird geprüft…</string>
     <string name="mapvm_back_online">Wieder online</string>
     <string name="mapvm_still_offline">Noch offline. Iraq Maps merkt sofort, wenn die Verbindung wieder da ist.</string>
@@ -1346,7 +1332,6 @@
     <string name="mapscreen_location_tip_body">GPS allein kann in Innenräumen oft keine Position bestimmen. Aktivieren Sie unter GrapheneOS die Option „Standort über Netzwerk“ unter „Einstellungen“ &gt; „Standort“ &gt; „Standortdienste“.</string>
     <string name="mapscreen_location_tip_settings">Standorteinstellungen</string>
     <string name="search_saved_tip">Deine gespeicherten Orte findest du unter der Lesezeichen-Schaltfläche oben. Füge einen hinzu, um ihn hier zu speichern.</string>
-    <string name="welcome_feature_private_body">Kein Konto, keine Werbung, keine Analysen und kein Iraq Maps-Server.</string>
     <string name="welcome_continue">Weiter</string>
     <string name="welcome_cameras_intro">Dieses Symbol kennzeichnet einen Flock- oder einen anderen Kennzeichenleser auf der Karte. Iraq Maps kann außerdem:</string>
     <string name="welcome_cameras_avoid">Um sie herumführen</string>
@@ -1465,6 +1450,5 @@
     <string name="settings_bridge_openings_hint">In den Niederlanden wird angezeigt, wann eine bewegliche Brücke auf Ihrer Route geöffnet ist oder geöffnet werden soll, sobald Sie diese erreichen. Geplante und aktuelle Öffnungszeiten stammen aus den Open-Road-Daten der NDW und werden erst abgefragt, wenn Ihre Route in die Niederlande führt.</string>
     <string name="nav_bridge_open_ahead">Die vor ihnen liegende Brücke ist geöffnet</string>
     <string name="nav_bridge_opening_ahead">Brücke in Sicht: Eröffnung in %1$s geplant</string>
-    <string name="settings_project_site_button">Website</string>
     <string name="settings_takeout_imported_none">Es konnte kein Eintrag in der Liste gefunden werden, daher wurde %1$s nicht erstellt.</string>
 </resources>

@@ -384,12 +384,8 @@
     <string name="steps_live_traffic">trânsito em direto</string>
     <string name="steps_close_cd">Fechar etapas</string>
     <string name="steps_continue">Continuar</string>
-    <string name="welcome_tagline">Mapas e navegação, sem Google.</string>
     <string name="welcome_feature_no_tracking_title">Sem rastreio</string>
-    <string name="welcome_feature_places_title">Locais e percursos reais</string>
-    <string name="welcome_feature_places_body">Pesquisa em direto, avaliações, fotos, transportes e direções sensíveis ao trânsito.</string>
     <string name="welcome_feature_open_source_title">Gratuito e de código aberto</string>
-    <string name="welcome_feature_open_source_body">GPLv3, criado para o GrapheneOS e outros telemóveis sem Google.</string>
     <string name="welcome_get_started">Começar</string>
     <string name="welcome_donate_title">A gostar do Iraq Maps?</string>
     <string name="welcome_donate_body">O Iraq Maps é gratuito e sem anúncios, criado com poucos recursos. Se se tornou útil, um pequeno donativo único ajuda a mantê-lo, totalmente opcional, e esta é a única vez que o pedirá. Há sempre também uma entrada Apoiar nas Definições.</string>
@@ -577,7 +573,6 @@
     <string name="map_list_saved">“%1$s” guardada nas suas listas</string>
     <string name="settings_update_nightly">Incluir compilações nightly</string>
     <string name="settings_update_nightly_hint">Atualizar para a nightly mais recente (pré-lançamento) em vez de apenas versões estáveis. As nightly são mais recentes mas menos testadas.</string>
-    <string name="settings_lists_export_hint">Faça uma cópia das suas listas num ficheiro ou restaure-as noutro dispositivo. A opção de importação também aceita listas da pasta \"Salvos\" do Google Takeout (um ficheiro CSV por lista); cada local nela é pesquisado, pelo que é necessária uma ligação.</string>
     <string name="settings_lists_imported">%1$d lista(s) importada(s)</string>
     <string name="settings_places_imported">%1$d local(is) importado(s)</string>
     <!-- format -->
@@ -683,9 +678,7 @@
     <string name="settings_hub_search_sub">Pesquisa por voz e modelos de fala</string>
     <string name="settings_hub_offline_sub">Mapas offline, rotas, lugares</string>
     <string name="settings_hub_saved_sub">As suas listas, exportar, histórico de estacionamento</string>
-    <string name="settings_hub_privacy_sub">O que a Google recebe, limpar histórico</string>
     <string name="settings_hub_diagnostics_sub">Relatórios de falhas, viagens, modo demo, experiências</string>
-    <string name="settings_hub_about_sub">Versão, atualizações, apoio</string>
     <string name="settings_theme_amoled">Preto AMOLED</string>
     <string name="place_review_more">Mais</string>
     <string name="place_review_less">Menos</string>
@@ -708,11 +701,9 @@
     <string name="root_voice_tts_desc">Indicações faladas a cada curva. Recomendada. Transferência única de %1$d MB.</string>
     <!-- format -->
     <string name="root_voice_mic_title">Pesquisar por voz</string>
-    <string name="root_voice_mic_desc">Dite as pesquisas sem escrever. Sem isto, o microfone usa o Google. Transferência única de %1$d MB.</string>
     <!-- format -->
     <string name="root_voice_none_picked">Selecione uma opção ou escolha Agora não.</string>
     <string name="root_offline_title">Mapas offline</string>
-    <string name="root_offline_body">O Iraq Maps obtém locais, pesquisa e direções do Google, por isso sem sinal só funcionam as áreas que transferiu. Configure uma área agora para ficar coberto quando perder a rede.</string>
     <string name="root_offline_setup">Configurar offline</string>
     <string name="mapvm_stop_added">Parada adicionada</string>
     <string name="shortcut_home">Casa</string>
@@ -829,7 +820,6 @@
     <string name="settings_house_numbers_near">Só com muita aproximação</string>
     <string name="settings_house_numbers_normal">Normal</string>
     <string name="settings_house_numbers_far">Mais afastado</string>
-    <string name="settings_house_numbers_hint">Os números de porta vêm do OpenStreetMap e, nos EUA, do OpenAddresses. Um edifício que não tenha número em nenhum dos dois não mostra nenhum, mesmo que a pesquisa continue a encontrar a morada através da Google.</string>
     <string name="settings_show_pois">Mostrar locais</string>
     <string name="settings_show_pois_hint">Ícones de estabelecimentos e locais no mapa de exploração. Desligado = um mapa limpo; os locais pesquisados continuam a aparecer.</string>
     <string name="settings_places_source">Ícones de locais no mapa</string>
@@ -842,7 +832,6 @@
     <string name="settings_places_source_more">Saber mais</string>
     <string name="settings_places_source_more_credit">Overture Maps</string>
     <string name="settings_places_source_more_title">De onde vêm os dados de locais da Iraq Maps</string>
-    <string name="settings_places_source_more_body">Os dados de locais da Iraq Maps são do Overture Maps, um conjunto de dados aberto de estabelecimentos mantido pela Meta, pela Microsoft e por outros. A Iraq Maps serve-os a partir do seu próprio repositório no GitHub, por isso nada sobre onde olha chega à Meta ou à Google.\n\nChegam à medida que explora e são transferidos com uma região para uso offline. Onde a Iraq Maps ainda não tem dados para uma área, o mapa recorre à Google.\n\nA pesquisa, os detalhes dos locais, os horários, as avaliações e as fotos vêm sempre da Google, seja qual for a opção que escolher.</string>
     <string name="settings_show_civic">Parques, escolas e locais públicos</string>
     <string name="settings_show_civic_hint">O nível de ícones que não são estabelecimentos. Desligado mostra apenas estabelecimentos.</string>
     <string name="settings_show_transit_stops">Paragens de transportes</string>
@@ -968,7 +957,6 @@
     <string name="settings_voice_volume_louder">Mais alto</string>
     <string name="settings_voice_volume_loudest">Máximo</string>
     <string name="settings_voice_volume_hint">Com que volume as indicações faladas tocam por cima do que está a ouvir. Os níveis mais altos aplicam-se à voz Iraq Maps; as vozes do sistema só podem ficar mais baixas.</string>
-    <string name="place_avoid_not_honored">Estas rotas podem ainda usar portagens, autoestradas ou ferries: não foi possível contactar a Google para as evitar, e o planeador de rotas aberto não consegue. Numa área transferida a Iraq Maps evita-as offline.</string>
     <string name="settings_asr_engines_title">Motor de reconhecimento no dispositivo</string>
     <string name="voice_capture_examples_title">Coisas que pode dizer</string>
     <string name="voice_capture_example_home">“Leva-me a casa” ou “leva-me para o trabalho”</string>
@@ -984,7 +972,6 @@
     <string name="voice_cmd_eta">Hora de chegada, ao conduzir</string>
     <string name="voice_cmd_hint">Funcionam falados ou escritos na barra de pesquisa, no idioma da app ou em inglês. O resto é uma pesquisa normal.</string>
     <string name="settings_map_data">Dados do mapa</string>
-    <string name="settings_map_data_hint">O mapa, as suas ruas, etiquetas e números de porta são dados do OpenStreetMap, disponíveis sob a Open Database License, servidos como mosaicos vetoriais pelo OpenFreeMap. Os estabelecimentos no mapa, nas regiões cobertas, são dados de locais da Overture Maps Foundation (com origem na Meta e na Microsoft), disponíveis sob a Community Data License Agreement, Permissive 2.0. Os detalhes dos locais, as avaliações, os percursos e o trânsito vêm da Google. As imagens de satélite são da Esri e da Google. A forma como a voz diz 3500 nomes de locais vem da Wikipedia e os seus contribuidores, ao abrigo da CC BY-SA 4.0.</string>
     <string name="settings_map_data_button">Direitos de autor do OpenStreetMap</string>
     <string name="settings_map_data_overture_button">Licença do Overture Maps</string>
     <string name="settings_theme_auto">Dia e noite</string>
@@ -1315,7 +1302,6 @@
     <string name="settings_map_names_local_english">Local e inglês</string>
     <string name="settings_map_names_hint">Os nomes romanizados são gerados automaticamente onde o OpenStreetMap não tem nome em inglês, e leem-se mal em hebraico e noutros alfabetos. A língua da app e a voz não mudam.</string>
     <string name="settings_project">Projeto</string>
-    <string name="settings_project_hint">O website tem a visão geral, e a página de imprensa. O código-fonte, os relatórios de erros e as discussões estão no GitHub.</string>
     <string name="mapvm_rechecking_connection">A verificar a ligação…</string>
     <string name="mapvm_back_online">De novo online</string>
     <string name="mapvm_still_offline">Ainda offline. A Iraq Maps dá por isso assim que a ligação voltar.</string>
@@ -1359,7 +1345,6 @@
     <string name="search_saved_tip">O seus locais guardados estão no botão de favoritos acima. Guarde um para o manter aqui.</string>
     <string name="search_open_now_phrase">Aberto agora</string>
     <string name="nav_voice_button">Direções faladas: ativas, só alertas or desligadas</string>
-    <string name="welcome_feature_private_body">Sem conta, sem publicidade, sem telemetria, e sem servidor Iraq Maps.</string>
     <string name="welcome_continue">Continuar</string>
     <string name="welcome_cameras_title">Câmeras de matrícula</string>
     <string name="welcome_cameras_intro">Este emblema identifica um leitor de matrículas Flock ou outro similar no mapa. A Iraq Maps pode também:</string>
@@ -1462,7 +1447,6 @@
     <string name="settings_zoom_keys_hint">Duas teclas que permitem ampliar e reduzir o mapa em qualquer ponto, como as teclas 2 e 5 de um teclado numérico. Num campo de texto, o utilizador ainda digita.</string>
     <string name="settings_zoom_key_press">Pressione a tecla para usar. As setas, OK e Voltar estão reservadas.</string>
     <string name="settings_zoom_key_clear">Limpar</string>
-    <string name="settings_project_site_button">Website</string>
     <string name="nav_left_your_route">Deixei “%1$s”. A seguir o caminho mais rápido.</string>
     <string name="list_sound_label">Som quando passa por um</string>
     <string name="list_sound_off">Desligado</string>

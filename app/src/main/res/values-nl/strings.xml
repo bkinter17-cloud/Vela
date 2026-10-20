@@ -384,12 +384,8 @@
     <string name="steps_live_traffic">live verkeer</string>
     <string name="steps_close_cd">Stappen sluiten</string>
     <string name="steps_continue">Doorgaan</string>
-    <string name="welcome_tagline">Kaarten en navigatie, gedegoogeld.</string>
     <string name="welcome_feature_no_tracking_title">Geen tracking</string>
-    <string name="welcome_feature_places_title">Echte plaatsen en routes</string>
-    <string name="welcome_feature_places_body">Live zoeken, recensies, foto\'s, OV en verkeersbewuste routes.</string>
     <string name="welcome_feature_open_source_title">Gratis en open source</string>
-    <string name="welcome_feature_open_source_body">GPLv3, gebouwd voor GrapheneOS en andere gedegoogelde telefoons.</string>
     <string name="welcome_get_started">Aan de slag</string>
     <string name="welcome_donate_title">Bevalt Iraq Maps u?</string>
     <string name="welcome_donate_body">Iraq Maps is gratis en reclamevrij, gebouwd met een minimaal budget. Als het nuttig is geworden, helpt een kleine eenmalige donatie het voort te zetten, geheel optioneel, en dit is de enige keer dat het erom vraagt. Er staat ook altijd een item Ondersteunen in Instellingen.</string>
@@ -576,7 +572,6 @@
     <string name="map_list_saved">“%1$s” opgeslagen in je lijsten</string>
     <string name="settings_update_nightly">Nightly-builds meenemen</string>
     <string name="settings_update_nightly_hint">Werk bij naar de nieuwste nightly (voorlopige versie) in plaats van alleen stabiele versies. Nightlies zijn verser maar minder getest.</string>
-    <string name="settings_lists_export_hint">Maak een back-up van je lijsten naar een bestand of herstel ze op een ander apparaat.</string>
     <string name="settings_lists_imported">%1$d lijst(en) geïmporteerd</string>
     <string name="settings_places_imported">%1$d plaats(en) geïmporteerd</string>
     <!-- format -->
@@ -680,9 +675,7 @@
     <string name="settings_hub_search_sub">Spraakzoeken en spraakmodellen</string>
     <string name="settings_hub_offline_sub">Offline kaarten, routes, plaatsen</string>
     <string name="settings_hub_saved_sub">Je lijsten, exporteren, parkeergeschiedenis</string>
-    <string name="settings_hub_privacy_sub">Wat Google ontvangt, geschiedenis wissen</string>
     <string name="settings_hub_diagnostics_sub">Crashrapporten, ritten, demomodus, experimenten</string>
-    <string name="settings_hub_about_sub">Versie, updates, steun</string>
     <string name="settings_theme_amoled">AMOLED-zwart</string>
     <string name="place_review_more">Meer</string>
     <string name="place_review_less">Minder</string>
@@ -705,11 +698,9 @@
     <string name="root_voice_tts_desc">Gesproken navigatie per afslag. Aanbevolen. Eenmalige download van %1$d MB.</string>
     <!-- format -->
     <string name="root_voice_mic_title">Zoeken met je stem</string>
-    <string name="root_voice_mic_desc">Dicteer zoekopdrachten zonder typen. Zonder dit gebruikt de microfoon Google. Eenmalige download van %1$d MB.</string>
     <!-- format -->
     <string name="root_voice_none_picked">Vink een optie aan of kies Niet nu.</string>
     <string name="root_offline_title">Offlinekaarten</string>
-    <string name="root_offline_body">Iraq Maps haalt plaatsen, zoekopdrachten en routes van Google, dus zonder signaal werken alleen gebieden die je hebt gedownload. Stel nu een gebied in zodat je gedekt bent als je bereik verliest.</string>
     <string name="root_offline_setup">Offline instellen</string>
     <string name="mapvm_stop_added">Tussenstop toegevoegd</string>
     <string name="shortcut_home">Thuis</string>
@@ -825,7 +816,6 @@
     <string name="settings_house_numbers_near">Alleen sterk ingezoomd</string>
     <string name="settings_house_numbers_normal">Normaal</string>
     <string name="settings_house_numbers_far">Verder uitgezoomd</string>
-    <string name="settings_house_numbers_hint">Huisnummers komen uit OpenStreetMap en, in de VS, OpenAddresses. Een gebouw dat in geen van beide een nummer heeft, toont er geen, ook al vindt zoeken het adres nog steeds via Google.</string>
     <string name="settings_show_pois">Plaatsen tonen</string>
     <string name="settings_show_pois_hint">Pictogrammen van bedrijven en plaatsen op de kaart. Uit = een schone kaart; gezochte plaatsen blijven zichtbaar.</string>
     <string name="settings_places_source">Plaatspictogrammen op de kaart</string>
@@ -840,7 +830,6 @@
     <string name="settings_places_lookup">Aangetikte plaatsen opzoeken bij Google</string>
     <string name="settings_places_lookup_hint">Op een plaats tikken haalt de openingstijden, recensies en foto\'s bij Google op, en Iraq Maps onthoudt de koppeling zodat de volgende tik direct is. Uit = een aangetikte plaats toont alleen wat Iraq Maps\' eigen gegevens hebben (naam, type, adres, telefoon, website) en er bereikt niets over die tik Google. Zoeken en routes gebruiken nog steeds Google.</string>
     <string name="settings_places_source_more_title">Waar Iraq Maps\' plaatsgegevens vandaan komen</string>
-    <string name="settings_places_source_more_body">Iraq Maps\' plaatsgegevens zijn Overture Maps, een open dataset van bedrijven die wordt onderhouden door Meta, Microsoft en anderen. Iraq Maps levert die vanuit zijn eigen GitHub-repository, dus er gaat niets over waar jij kijkt naar Meta of Google.\n\nDe gegevens komen binnen terwijl je de kaart bekijkt en worden met een regio gedownload voor offline gebruik. Waar Iraq Maps nog geen gegevens voor een gebied heeft, valt de kaart terug op Google.\n\nZoeken, plaatsdetails, openingstijden, recensies en foto\'s komen altijd van Google, welke optie je ook kiest.</string>
     <string name="settings_show_civic">Parken, scholen en openbare plaatsen</string>
     <string name="settings_show_civic_hint">De niet-zakelijke laag van plaatspictogrammen. Uit toont alleen bedrijven.</string>
     <string name="settings_show_transit_stops">OV-haltes</string>
@@ -966,7 +955,6 @@
     <string name="settings_voice_volume_louder">Luider</string>
     <string name="settings_voice_volume_loudest">Luidst</string>
     <string name="settings_voice_volume_hint">Hoe luid gesproken aanwijzingen over je media klinken. De luidere standen gelden voor de Iraq Maps-stem; systeemstemmen kunnen alleen zachter.</string>
-    <string name="place_avoid_not_honored">Deze routes kunnen nog steeds tolwegen, snelwegen of veerboten gebruiken: Google was niet bereikbaar om eromheen te plannen, en de open routeplanner kan dat niet. In een gedownload gebied vermijdt Iraq Maps ze offline.</string>
     <string name="settings_asr_engines_title">Spraakherkenning op het toestel</string>
     <string name="voice_capture_examples_title">Dingen die je kunt zeggen</string>
     <string name="voice_capture_example_home">\"Breng me naar huis\" of \"breng me naar mijn werk\"</string>
@@ -982,7 +970,6 @@
     <string name="voice_cmd_eta">Aankomsttijd, tijdens het rijden</string>
     <string name="voice_cmd_hint">Dit werkt gesproken of getypt in de zoekbalk, in de apptaal of in het Engels. Al het andere wordt een gewone zoekopdracht.</string>
     <string name="settings_map_data">Kaartgegevens</string>
-    <string name="settings_map_data_hint">De kaart, de straten, labels en huisnummers zijn OpenStreetMap-gegevens, beschikbaar onder de Open Database License, geleverd als vectortegels door OpenFreeMap. De bedrijven op de kaart zijn in gedekte regio\'s plaatsgegevens van de Overture Maps Foundation (afkomstig van Meta en Microsoft), beschikbaar onder de Community Data License Agreement, Permissive 2.0. Plaatsdetails, recensies, routering en verkeer komen van Google. Satellietbeelden komen van Esri en Google.</string>
     <string name="settings_map_data_button">OpenStreetMap-copyright</string>
     <string name="settings_map_data_overture_button">Overture Maps-licentie</string>
     <string name="settings_theme_auto">Dag en nacht</string>
@@ -1304,7 +1291,6 @@
     <string name="settings_map_names_local_english">Lokaal en Engels</string>
     <string name="settings_map_names_hint">Geromaniseerde namen worden machinaal gemaakt waar OpenStreetMap geen Engelse naam heeft, en lezen slecht in het Hebreeuws en enkele andere schriften. De app-taal en de stem veranderen niet.</string>
     <string name="settings_project">Project</string>
-    <string name="settings_project_hint">Broncode, bugmeldingen en discussies staan op GitHub.</string>
     <string name="mapvm_rechecking_connection">Verbinding controleren…</string>
     <string name="mapvm_back_online">Weer online</string>
     <string name="mapvm_still_offline">Nog steeds offline. Iraq Maps merkt het meteen als de verbinding terug is.</string>

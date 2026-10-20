@@ -377,12 +377,8 @@
     <string name="steps_live_traffic">תנועה בזמן אמת</string>
     <string name="steps_close_cd">סגור שלבים</string>
     <string name="steps_continue">המשך</string>
-    <string name="welcome_tagline">מפות וניווט, בלי תלות ב־Google.</string>
     <string name="welcome_feature_no_tracking_title">ללא מעקב</string>
-    <string name="welcome_feature_places_title">מקומות &amp; מסלולים אמיתיים</string>
-    <string name="welcome_feature_places_body">חיפוש חי, ביקורות, תמונות, תחבורה ציבורית, ומסלולים מודעי-תנועה.</string>
     <string name="welcome_feature_open_source_title">חינמי &amp; קוד פתוח</string>
-    <string name="welcome_feature_open_source_body">GPLv3, נבנה עבור GrapheneOS וטלפונים אחרים ללא Google.</string>
     <string name="welcome_get_started">בואו נתחיל</string>
     <string name="welcome_donate_title">כיף לך להשתמש ב־Iraq Maps?</string>
     <string name="welcome_donate_body">היישום Iraq Maps הוא חופשי ונטול פרסומות, נבנה בתקציב זעום. אם הוא שימושי עבורך, תרומה חד־פעמית קטנה תעזור לשמור עליו. זו לא חובה, וזו הפעם היחידה שנבקש זאת ממך. תמיד יש גם רשומת „תמיכה” בהגדרות.</string>
@@ -561,7 +557,6 @@
     <string name="map_list_saved">\"%1$s\" נשמרה לרשימות שלך</string>
     <string name="settings_update_nightly">כלול גרסאות nightly</string>
     <string name="settings_update_nightly_hint">עדכן ל-nightly החדש ביותר (טרום-שחרור) במקום רק לגרסאות יציבות. גרסאות nightly טריות יותר אך פחות נבדקו.</string>
-    <string name="settings_lists_export_hint">גבה את הרשימות שלך לקובץ, או שחזר אותן במכשיר אחר.</string>
     <string name="settings_lists_imported">יובאו %1$d רשימות</string>
     <string name="settings_places_imported">יובאו %1$d מקומות</string>
     <string name="settings_no_lists">אין עדיין רשימות לייצוא</string>
@@ -665,9 +660,7 @@
     <string name="settings_hub_search_sub">חיפוש קולי ומודלים של דיבור</string>
     <string name="settings_hub_offline_sub">מפות לא מקוונות, ניווט, מקומות</string>
     <string name="settings_hub_saved_sub">הרשימות שלך, ייצוא, היסטוריית חניה</string>
-    <string name="settings_hub_privacy_sub">מה Google מקבלת, ניקוי היסטוריה</string>
     <string name="settings_hub_diagnostics_sub">דוחות קריסה, נסיעות, מצב הדגמה, ניסויים</string>
-    <string name="settings_hub_about_sub">גרסה, עדכונים, תמיכה</string>
     <string name="settings_theme_amoled">שחור AMOLED</string>
     <string name="place_review_more">עוד</string>
     <string name="place_review_less">פחות</string>
@@ -680,7 +673,6 @@
     <string name="root_voice_tts_desc">הנחיות מדוברות לכל פנייה. מומלץ. הורדה חד־פעמית בגודל %1$d מ״ב.</string>
     <!-- format -->
     <string name="root_voice_mic_title">חיפוש בדיבור</string>
-    <string name="root_voice_mic_desc">הכתבה של חיפושים ללא הקלדה. בלי זה, המיקרופון ישתמש ב־Google. הורדה חד־פעמית בגודל %1$d מ״ב.</string>
     <!-- format -->
     <string name="root_voice_none_picked">סמן אפשרות אחת או בחר לא עכשיו.</string>
     <string name="mapvm_stop_added">תחנה נוספה</string>
@@ -702,7 +694,6 @@
     <string name="root_diag_trips_desc">מקליט את עקבות ה-GPS של הניווט כדי שניתן יהיה לשחזר נסיעות לצורך בדיקה. חושפני יותר: המסלולים המדויקים שלך.</string>
     <string name="root_diag_save">שמירת הבחירות</string>
     <string name="root_offline_title">מפות לא מקוונות</string>
-    <string name="root_offline_body">Iraq Maps מקבל מקומות, חיפוש והוראות הגעה מ-Google, כך שללא קליטה יפעלו רק אזורים שהורדת. הגדר אזור עכשיו כדי להיות מכוסה כשאין קליטה.</string>
     <string name="root_offline_setup">הגדרת מצב לא מקוון</string>
     <string name="no_browser_installed">במכשיר שלך אין דפדפן</string>
     <string name="street_view_move">מעבר לכאן</string>
@@ -805,7 +796,6 @@
     <string name="settings_house_numbers_near">רק בהתקרבות מלאה</string>
     <string name="settings_house_numbers_normal">רגיל</string>
     <string name="settings_house_numbers_far">גם מרחוק</string>
-    <string name="settings_house_numbers_hint">מספרי הבתים מגיעים מ-OpenStreetMap, ובארצות הברית גם מ-OpenAddresses. בניין שאין לו מספר באף אחד מהם לא יציג מספר, גם אם החיפוש עדיין מוצא את הכתובת דרך Google.</string>
     <string name="settings_show_pois">הצג מקומות</string>
     <string name="settings_show_pois_hint">אייקונים של עסקים ומקומות במפת העיון. כבוי = מפה נקייה; מקומות שחיפשת עדיין מוצגים.</string>
     <string name="settings_places_source">סמלי מקומות במפה</string>
@@ -820,7 +810,6 @@
     <string name="settings_places_lookup">בדוק ב-Google מקומות שהקשת עליהם</string>
     <string name="settings_places_lookup_hint">הקשה על מקום מביאה את השעות, הביקורות והתמונות שלו מ-Google, ו-Iraq Maps זוכר את ההתאמה כך שההקשה הבאה מיידית. כבוי = מקום שהקשת עליו מציג רק את מה שיש בנתונים של Iraq Maps (שם, סוג, כתובת, טלפון, אתר) ושום דבר על ההקשה לא מגיע ל-Google. חיפוש ומסלולים עדיין משתמשים ב-Google.</string>
     <string name="settings_places_source_more_title">מאיפה מגיעים נתוני המקומות של Iraq Maps</string>
-    <string name="settings_places_source_more_body">נתוני המקומות של Iraq Maps לקוחים ממיזם Overture Maps, מאגר עסקים פתוח המתוחזק על ידי Meta,‏ Microsoft ועוד חברות אחרות, לרבות AllThePlaces, שאוסף רשתות מנתוני כתובות הסניפים שלהן, כאשר נעשה שימוש ב־OpenStreetMap לתיקון הכתובת המדויקת של כל סניף. היישום Iraq Maps משלב את שלושת המקורות לכדי מקומות במפה ומספק אותם מתוך מאגר ה־GitHub שלו, כך ששום מידע על המקומות שהסתכלת עליהם לא מגיע אל Meta או Google.\n\nהנתונים נטענים תוך כדי עיון וניתן להוריד אזורים כדי להציג אותם ללא חיבור לרשת. היכן שליישום Iraq Maps עדיין אין נתונים על האזור, תתבצע נסיגה להצגת נתוני המפה מתוך Google.\n\nנתוני החיפוש, פרטי המקומות, שעות הפתיחה, הביקורות והתמונות תמיד מגיעים מתוך Google, לא משנה באיזו אפשרות בוחרים.</string>
     <string name="settings_show_civic">פארקים, בתי ספר ומקומות ציבוריים</string>
     <string name="settings_show_civic_hint">שכבת האייקונים שאינה עסקית. כבוי מציג עסקים בלבד.</string>
     <string name="settings_show_transit_stops">תחנות תחבורה ציבורית</string>
@@ -946,7 +935,6 @@
     <string name="settings_voice_volume_louder">חזק יותר</string>
     <string name="settings_voice_volume_loudest">הכי חזק</string>
     <string name="settings_voice_volume_hint">כמה חזק ההוראות המדוברות מושמעות מעל המדיה שלך. הרמות החזקות יותר חלות על Iraq Maps Voice; קולות מערכת אפשר רק להחליש.</string>
-    <string name="place_avoid_not_honored">המסלולים האלה עדיין עשויים לעבור בכבישי אגרה, כבישים מהירים או מעבורות: לא ניתן היה להגיע ל-Google כדי לעקוף אותם, והנתב הפתוח לא יכול לעשות זאת. באזור שהורד Iraq Maps נמנע מהם ללא חיבור.</string>
     <string name="settings_asr_engines_title">מנוע זיהוי במכשיר</string>
     <string name="voice_capture_examples_title">דברים שאפשר להגיד</string>
     <string name="voice_capture_example_home">\"קח אותי הביתה\" או \"קח אותי לעבודה\"</string>
@@ -962,7 +950,6 @@
     <string name="voice_cmd_eta">זמן הגעה, בזמן נסיעה</string>
     <string name="voice_cmd_hint">הפקודות עובדות בדיבור או בהקלדה בשורת החיפוש, בשפת היישום או באנגלית. כל דבר אחר מופעל כחיפוש רגיל.</string>
     <string name="settings_map_data">נתוני מפה</string>
-    <string name="settings_map_data_hint">המפה, הרחובות, התוויות ומספרי הבתים שלה הם נתוני OpenStreetMap, הזמינים תחת Open Database License, ומוגשים כאריחים וקטוריים על ידי OpenFreeMap. העסקים על המפה באזורים המכוסים הם נתוני מקומות של Overture Maps Foundation (ממקורות Meta ו-Microsoft), הזמינים תחת Community Data License Agreement, Permissive 2.0. פרטי מקומות, ביקורות, ניתוב ותנועה מגיעים מ-Google. תצלומי לוויין הם מ-Esri ומ-Google.</string>
     <string name="settings_map_data_button">זכויות היוצרים של OpenStreetMap</string>
     <string name="settings_map_data_overture_button">רישיון Overture Maps</string>
     <string name="settings_theme_auto">יום ולילה</string>
@@ -1293,7 +1280,6 @@
     <string name="settings_map_names_local_english">מקומי ואנגלית</string>
     <string name="settings_map_names_hint">שמות בתעתיק לטיני נוצרים אוטומטית כשב-OpenStreetMap אין שם באנגלית, ונקראים גרוע בעברית ובכמה כתבים אחרים. שפת האפליקציה והקול לא משתנים.</string>
     <string name="settings_project">הפרויקט</string>
-    <string name="settings_project_hint">קוד המקור, דיווחי באגים ודיונים נמצאים ב-GitHub.</string>
     <string name="mapvm_rechecking_connection">בודק את החיבור…</string>
     <string name="mapvm_back_online">החיבור חזר</string>
     <string name="mapvm_still_offline">עדיין לא מקוון. Iraq Maps יזהה מיד כשהחיבור יחזור.</string>

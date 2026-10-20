@@ -396,12 +396,8 @@
     <string name="steps_close_cd">ルート詳細を閉じる</string>
     <string name="steps_continue">直進</string>
     <!-- welcome: WelcomeScreen.kt -->
-    <string name="welcome_tagline">地図とナビを、脱Googleで。</string>
     <string name="welcome_feature_no_tracking_title">トラッキングなし</string>
-    <string name="welcome_feature_places_title">リアルな場所情報とルート</string>
-    <string name="welcome_feature_places_body">リアルタイム検索、クチコミ、写真、公共交通機関、交通状況を反映した経路。</string>
     <string name="welcome_feature_open_source_title">無料・オープンソース</string>
-    <string name="welcome_feature_open_source_body">GPLv3。GrapheneOS をはじめとする脱Google端末のために作られています。</string>
     <string name="welcome_get_started">はじめる</string>
     <string name="welcome_donate_title">Iraq Maps を気に入っていただけましたか？</string>
     <string name="welcome_donate_body">Iraq Maps は無料・広告なしで、ごくわずかな資金で開発されています。役に立っていると感じたら、一度きりの少額の寄付が継続の支えになります。完全に任意で、このお願いが表示されるのは今回だけです。設定にはいつでも「支援」の項目があります。</string>
@@ -573,7 +569,6 @@
     <string name="map_list_saved">「%1$s」をマイリストに保存しました</string>
     <string name="settings_update_nightly">ナイトリービルドを含める</string>
     <string name="settings_update_nightly_hint">安定版だけでなく、最新のナイトリー（プレリリース）にも更新します。ナイトリーは新しい分、テストは少なめです。</string>
-    <string name="settings_lists_export_hint">リストをファイルにバックアップしたり、別の端末で復元したりできます。</string>
     <string name="settings_lists_imported">リストを %1$d 件インポートしました</string>
     <string name="settings_places_imported">場所を %1$d 件インポートしました</string>
     <!-- format -->
@@ -664,9 +659,7 @@
     <string name="settings_hub_search_sub">音声検索と音声モデル</string>
     <string name="settings_hub_offline_sub">オフライン地図、ルート、場所</string>
     <string name="settings_hub_saved_sub">リスト、エクスポート、駐車履歴</string>
-    <string name="settings_hub_privacy_sub">Google に送られる情報、履歴の消去</string>
     <string name="settings_hub_diagnostics_sub">クラッシュレポート、走行記録、デモモード、試験機能</string>
-    <string name="settings_hub_about_sub">バージョン、更新、サポート</string>
     <string name="settings_theme_amoled">AMOLEDブラック</string>
     <string name="settings_traffic_lights">信号を使った案内</string>
     <string name="settings_traffic_lights_hint">音声の目印案内:信号を過ぎて曲がる。英語のみ、デフォルトはオフ。</string>
@@ -680,7 +673,6 @@
     <string name="root_voice_tts_desc">音声のターンバイターン案内。おすすめです。初回のみ %1$d MB のダウンロード。</string>
     <!-- format -->
     <string name="root_voice_mic_title">話して検索する</string>
-    <string name="root_voice_mic_desc">入力せずに音声で検索できます。なしの場合、マイクは Google を使います。初回のみ %1$d MB のダウンロード。</string>
     <!-- format -->
     <string name="root_voice_none_picked">どちらかを選ぶか、「後で」を押してください。</string>
     <string name="mapvm_stop_added">経由地を追加しました</string>
@@ -706,7 +698,6 @@
     <string name="root_diag_trips_desc">テスト用に運転を再生できるよう、ナビのGPS軌跡を記録します。より詳細な情報：正確な経路。</string>
     <string name="root_diag_save">選択を保存</string>
     <string name="root_offline_title">オフラインマップ</string>
-    <string name="root_offline_body">VelaはGoogleから場所・検索・経路を取得するため、圏外ではダウンロード済みのエリアのみ利用できます。今のうちにエリアを設定して、圏外でも使えるようにしましょう。</string>
     <string name="root_offline_setup">オフラインを設定</string>
     <string name="no_browser_installed">お使いの端末にはブラウザがありません</string>
     <string name="street_view_none">No Street View imagery here</string>
@@ -800,7 +791,6 @@
     <string name="settings_house_numbers_near">大きく拡大したときのみ</string>
     <string name="settings_house_numbers_normal">標準</string>
     <string name="settings_house_numbers_far">広めの範囲で表示</string>
-    <string name="settings_house_numbers_hint">番地は OpenStreetMap、米国では OpenAddresses のデータです。どちらにも番号がない建物には表示されませんが、検索では Google 経由でその住所を見つけられます。</string>
     <string name="settings_show_pois">場所を表示</string>
     <string name="settings_show_pois_hint">地図の閲覧中に店舗や施設のアイコンを表示します。オフにすると地図がすっきりしますが、検索した場所は表示されます。</string>
     <string name="settings_places_source">地図上の場所アイコン</string>
@@ -815,7 +805,6 @@
     <string name="settings_places_lookup">タップした場所を Google で調べる</string>
     <string name="settings_places_lookup_hint">場所をタップすると、営業時間・クチコミ・写真を Google から取得します。照合した結果は Iraq Maps が記憶するため、次に同じ場所をタップしたときはすぐに表示されます。オフの場合、タップした場所には Iraq Maps のデータにある情報（名称、種類、住所、電話番号、ウェブサイト）だけが表示され、タップの内容が Google に伝わることはありません。検索と経路には引き続き Google を使用します。</string>
     <string name="settings_places_source_more_title">Iraq Maps の場所データについて</string>
-    <string name="settings_places_source_more_body">Iraq Maps の場所データは、Meta や Microsoft などが運営する店舗のオープンデータセット Overture Maps です。Iraq Maps は自身の GitHub リポジトリから配信しているため、どこを見ているかが Meta や Google に伝わることはありません。\n\n閲覧に合わせて読み込まれ、地域をダウンロードするとオフラインでも使えます。Iraq Maps にまだデータがない地域では、Google のデータで表示します。\n\n検索、場所の詳細、営業時間、クチコミ、写真は、どの設定を選んでも常に Google から取得します。</string>
     <string name="settings_show_civic">公園・学校・公共施設</string>
     <string name="settings_show_civic_hint">店舗以外の場所アイコンです。オフにすると店舗のみ表示します。</string>
     <string name="settings_show_transit_stops">停留所・駅</string>
@@ -931,7 +920,6 @@
     <string name="voice_cmd_eta">到着時刻(運転中)</string>
     <string name="voice_cmd_hint">音声でも検索バーへの入力でも使えます。アプリの言語か英語で話してください。それ以外は通常の検索になります。</string>
     <string name="settings_map_data">地図データ</string>
-    <string name="settings_map_data_hint">地図とその道路、ラベル、番地は OpenStreetMap のデータで、Open Database License のもとで提供され、OpenFreeMap がベクタータイルとして配信しています。対応地域の地図上の店舗は Overture Maps Foundation の場所データ（Meta と Microsoft 由来）で、Community Data License Agreement, Permissive 2.0 のもとで提供されています。場所の詳細、クチコミ、経路、交通状況は Google から取得しています。衛星画像は Esri と Google のものです。</string>
     <string name="settings_map_data_button">OpenStreetMap の著作権表示</string>
     <string name="settings_map_data_overture_button">Overture Maps のライセンス</string>
     <string name="settings_theme_auto">昼と夜で切り替え</string>
@@ -1082,7 +1070,6 @@
     <string name="settings_speech_preload_hint">Iraq Maps を開いたときに音声検索のモデルを読み込み、マイクがすぐに聞き取れるようにします。音声のない状態が 2 分続くまで、約 300 MB を使用します。オフの場合は、検索ボックスをタップしたときに読み込みます。メモリが約 8 GB 以上の端末では初期状態でオンです。</string>
     <string name="settings_google_free_links">共有された Google マップのリンクを開く</string>
     <string name="settings_google_free_links_hint">Google マップの短縮リンク（maps.app.goo.gl）だけでは行き先が分かりません。オンにすると、Iraq Maps が Cookie なしで Google のリンク短縮サービスに 1 回だけ問い合わせ、オープンなデータでその場所を開きます。google.com/maps の完全なリンクは問い合わせなしで開きます。共有されたリストには引き続き Google が必要です。</string>
-    <string name="place_avoid_not_honored">これらのルートは有料道路、高速道路、フェリーを通る可能性があります。Google に接続できず回避ルートを検索できなかったためで、オープンな経路検索では回避できません。ダウンロード済みのエリアでは、Iraq Maps がオフラインで回避します。</string>
     <string name="settings_road_label_inbar">下部バーの中</string>
     <string name="settings_faster_auto">より速いルートに自動で切り替える</string>
     <string name="settings_faster_auto_hint">走行中により速いルートが見つかったとき、数秒以内に応答しなければそのルートに切り替えます。オフにすると、応答しなかった提案は取り消されます。どちらの場合も、提案が地図上に残り続けることはありません。</string>
@@ -1355,7 +1342,6 @@
     <string name="settings_map_names_local_english">現地の名前と英語</string>
     <string name="settings_map_names_hint">ローマ字の名前は、OpenStreetMapに英語名がない場所で機械的に作られ、ヘブライ語などいくつかの文字では読みにくくなります。アプリの言語と音声は変わりません。</string>
     <string name="settings_project">プロジェクト</string>
-    <string name="settings_project_hint">ソースコード、バグ報告、ディスカッションはGitHubにあります。</string>
     <string name="mapvm_rechecking_connection">接続を確認しています…</string>
     <string name="mapvm_back_online">オンラインに戻りました</string>
     <string name="mapvm_still_offline">まだオフラインです。接続が戻りしだい、Iraq Maps が自動で検知します。</string>

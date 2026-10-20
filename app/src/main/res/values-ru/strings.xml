@@ -347,12 +347,8 @@
     <string name="steps_live_traffic">пробки в реальном времени</string>
     <string name="steps_close_cd">Закрыть шаги</string>
     <string name="steps_continue">Продолжайте движение</string>
-    <string name="welcome_tagline">Карты и навигация без Google.</string>
     <string name="welcome_feature_no_tracking_title">Без слежки</string>
-    <string name="welcome_feature_places_title">Настоящие места и маршруты</string>
-    <string name="welcome_feature_places_body">Актуальный поиск, отзывы, фото, транспорт и маршруты с учётом пробок.</string>
     <string name="welcome_feature_open_source_title">Бесплатно и с открытым кодом</string>
-    <string name="welcome_feature_open_source_body">GPLv3, создано для GrapheneOS и других дегуглённых телефонов.</string>
     <string name="welcome_get_started">Начать</string>
     <string name="welcome_donate_title">Нравится Iraq Maps?</string>
     <string name="welcome_donate_body">Iraq Maps бесплатна и без рекламы, создана на энтузиазме. Если она стала полезной, небольшое разовое пожертвование поможет ей развиваться, полностью по желанию, и об этом спрашивается лишь один раз. В настройках всегда есть раздел «Поддержка».</string>
@@ -520,7 +516,6 @@
     <string name="map_list_saved">«%1$s» сохранён в ваших списках</string>
     <string name="settings_update_nightly">Включать ночные сборки</string>
     <string name="settings_update_nightly_hint">Обновляться до новейшей ночной сборки (предрелиз), а не только до стабильных версий. Ночные свежее, но менее протестированы.</string>
-    <string name="settings_lists_export_hint">Сохраните списки в файл или восстановите их на другом устройстве.</string>
     <string name="settings_lists_imported">Импортировано списков: %1$d</string>
     <string name="settings_places_imported">Импортировано мест: %1$d</string>
     <!-- format -->
@@ -616,9 +611,7 @@
     <string name="settings_hub_search_sub">Голосовой поиск и модели речи</string>
     <string name="settings_hub_offline_sub">Офлайн-карты, маршруты, места</string>
     <string name="settings_hub_saved_sub">Ваши списки, экспорт, история парковок</string>
-    <string name="settings_hub_privacy_sub">Что получает Google, очистка истории</string>
     <string name="settings_hub_diagnostics_sub">Отчёты о сбоях, поездки, демо-режим, эксперименты</string>
-    <string name="settings_hub_about_sub">Версия, обновления, поддержка</string>
     <string name="settings_theme_amoled">AMOLED-чёрный</string>
     <string name="place_review_more">Ещё</string>
     <string name="place_review_less">Свернуть</string>
@@ -641,11 +634,9 @@
     <string name="root_voice_tts_desc">Голосовые подсказки на каждом повороте. Рекомендуем. Разовая загрузка %1$d МБ.</string>
     <!-- format -->
     <string name="root_voice_mic_title">Поиск голосом</string>
-    <string name="root_voice_mic_desc">Диктуйте запросы без набора текста. Без этого микрофон использует Google. Разовая загрузка %1$d МБ.</string>
     <!-- format -->
     <string name="root_voice_none_picked">Выберите вариант или нажмите «Не сейчас».</string>
     <string name="root_offline_title">Офлайн-карты</string>
-    <string name="root_offline_body">Iraq Maps получает места, поиск и маршруты из Google, поэтому без сигнала будут работать только загруженные вами области. Настройте область сейчас, чтобы оставаться на связи при потере сети.</string>
     <string name="root_offline_setup">Настроить офлайн</string>
     <string name="mapvm_stop_added">Остановка добавлена</string>
     <string name="shortcut_home">Дом</string>
@@ -750,7 +741,6 @@
     <string name="settings_house_numbers_near">Только при сильном приближении</string>
     <string name="settings_house_numbers_normal">Обычно</string>
     <string name="settings_house_numbers_far">С большего расстояния</string>
-    <string name="settings_house_numbers_hint">Номера домов берутся из OpenStreetMap, а в США ещё и из OpenAddresses. Если у здания нет номера ни там, ни там, он не показывается, хотя поиск всё равно найдёт адрес через Google.</string>
     <string name="settings_show_pois">Показывать места</string>
     <string name="settings_show_pois_hint">Значки организаций и мест на обзорной карте. Выкл. = чистая карта, найденные места всё равно показываются.</string>
     <string name="settings_places_source">Значки мест на карте</string>
@@ -765,7 +755,6 @@
     <string name="settings_places_lookup">Искать нажатые места в Google</string>
     <string name="settings_places_lookup_hint">Нажатие на место подгружает его часы работы, отзывы и фото из Google, а Iraq Maps запоминает соответствие, чтобы следующее нажатие было мгновенным. Выкл. = при нажатии показывается только то, что есть в данных Iraq Maps (название, тип, адрес, телефон, сайт), и о нажатии в Google ничего не уходит. Поиск и маршруты по-прежнему работают через Google.</string>
     <string name="settings_places_source_more_title">Откуда Iraq Maps берёт данные о местах</string>
-    <string name="settings_places_source_more_body">Данные Iraq Maps о местах берутся из Overture Maps, открытого набора данных об организациях, который поддерживают Meta, Microsoft и другие. Iraq Maps раздаёт его из собственного репозитория на GitHub, поэтому ничего о том, куда вы смотрите, не уходит ни в Meta, ни в Google.\n\nОни подгружаются по мере просмотра и скачиваются вместе с регионом для работы офлайн. Там, где у Iraq Maps ещё нет данных по области, карта возвращается к Google.\n\nПоиск, сведения о местах, часы работы, отзывы и фото всегда приходят из Google, какой бы вариант вы ни выбрали.</string>
     <string name="settings_show_civic">Парки, школы и общественные места</string>
     <string name="settings_show_civic_hint">Слой некоммерческих мест. Выкл. = только организации.</string>
     <string name="settings_show_transit_stops">Остановки транспорта</string>
@@ -881,7 +870,6 @@
     <string name="voice_cmd_eta">Время прибытия, в пути</string>
     <string name="voice_cmd_hint">Команды работают голосом или текстом в строке поиска, на языке приложения или по-английски. Всё остальное ищется как обычно.</string>
     <string name="settings_map_data">Данные карты</string>
-    <string name="settings_map_data_hint">Карта, её улицы, подписи и номера домов это данные OpenStreetMap, доступные по лицензии Open Database License и раздаваемые в виде векторных тайлов сервисом OpenFreeMap. Организации на карте в покрытых регионах это данные о местах от Overture Maps Foundation (из источников Meta и Microsoft), доступные по лицензии Community Data License Agreement, Permissive 2.0. Сведения о местах, отзывы, маршруты и пробки приходят из Google. Спутниковые снимки предоставляют Esri и Google.</string>
     <string name="settings_map_data_button">Авторские права OpenStreetMap</string>
     <string name="settings_map_data_overture_button">Лицензия Overture Maps</string>
     <string name="settings_theme_auto">День и ночь</string>
@@ -1049,7 +1037,6 @@
     <string name="settings_speech_preload_hint">Загружает модель голосового поиска при открытии Iraq Maps, чтобы микрофон слушал сразу. Она занимает около 300 МБ, пока не пройдут две минуты тишины. Если выключено, загружается при нажатии на строку поиска. По умолчанию включено на телефонах с памятью примерно от 8 ГБ.</string>
     <string name="settings_google_free_links">Открывать присланные ссылки Google Maps</string>
     <string name="settings_google_free_links_hint">Короткая ссылка Google Maps (maps.app.goo.gl) не говорит, куда ведёт. Если включено, Iraq Maps один раз обращается к сокращателю ссылок Google без cookie и открывает место по открытым источникам. Полные ссылки google.com/maps открываются без запроса. Для общих списков по-прежнему нужен Google.</string>
-    <string name="place_avoid_not_honored">Эти маршруты всё же могут проходить по платным дорогам, шоссе или паромам: Google недоступен, чтобы их объехать, а открытый маршрутизатор этого не умеет. В загруженной области Iraq Maps объезжает их офлайн.</string>
     <string name="settings_road_label_inbar">Внутри нижней панели</string>
     <string name="settings_faster_auto">Выбирать более быстрые маршруты автоматически</string>
     <string name="settings_faster_auto_hint">Если в пути появляется более быстрый маршрут, он выбирается, когда вы не отвечаете в течение нескольких секунд. Если выключить, предложение без ответа просто закрывается. В любом случае оно не висит на карте в ожидании.</string>
@@ -1343,7 +1330,6 @@
     <string name="settings_map_names_local_english">Местное и английское</string>
     <string name="settings_map_names_hint">Названия латиницей создаются машиной там, где в OpenStreetMap нет английского названия, и плохо читаются для иврита и некоторых других письменностей. Язык приложения и голос не меняются.</string>
     <string name="settings_project">Проект</string>
-    <string name="settings_project_hint">Исходный код, сообщения об ошибках и обсуждения находятся на GitHub.</string>
     <string name="mapvm_rechecking_connection">Проверка подключения…</string>
     <string name="mapvm_back_online">Связь восстановлена</string>
     <string name="mapvm_still_offline">Связи всё ещё нет. Iraq Maps заметит, как только подключение вернётся.</string>

@@ -396,12 +396,8 @@
     <string name="steps_close_cd">关闭步骤</string>
     <string name="steps_continue">继续直行</string>
     <!-- welcome: WelcomeScreen.kt -->
-    <string name="welcome_tagline">地图与导航，去谷歌化。</string>
     <string name="welcome_feature_no_tracking_title">无追踪</string>
-    <string name="welcome_feature_places_title">真实的地点与路线</string>
-    <string name="welcome_feature_places_body">实时搜索、评价、照片、公交，以及考虑路况的路线。</string>
     <string name="welcome_feature_open_source_title">免费且开源</string>
-    <string name="welcome_feature_open_source_body">GPLv3 许可，为 GrapheneOS 及其他去谷歌手机打造。</string>
     <string name="welcome_get_started">开始使用</string>
     <string name="welcome_donate_title">喜欢 Iraq Maps 吗？</string>
     <string name="welcome_donate_body">Iraq Maps 免费且无广告，靠微薄的经费开发。如果它对您有用，一笔小额的一次性捐助能帮助它走下去。完全自愿，而且只会问这一次。设置中也始终有“支持”入口。</string>
@@ -573,7 +569,6 @@
     <string name="map_list_saved">已将“%1$s”保存到您的列表</string>
     <string name="settings_update_nightly">包含每夜构建版</string>
     <string name="settings_update_nightly_hint">更新到最新的每夜版（预发布版本），而不仅限于稳定版。每夜版更新更快，但测试较少。</string>
-    <string name="settings_lists_export_hint">将您的列表备份到文件，或在其他设备上恢复。</string>
     <string name="settings_lists_imported">已导入 %1$d 个列表</string>
     <string name="settings_places_imported">已导入 %1$d 个地点</string>
     <!-- format -->
@@ -664,9 +659,7 @@
     <string name="settings_hub_search_sub">语音搜索与语音模型</string>
     <string name="settings_hub_offline_sub">离线地图、路线、地点</string>
     <string name="settings_hub_saved_sub">你的列表、导出、停车记录</string>
-    <string name="settings_hub_privacy_sub">Google 收到的信息、清除历史记录</string>
     <string name="settings_hub_diagnostics_sub">崩溃报告、行程、演示模式、实验功能</string>
-    <string name="settings_hub_about_sub">版本、更新、支持</string>
     <string name="settings_theme_amoled">AMOLED纯黑</string>
     <string name="settings_traffic_lights">红绿灯提示</string>
     <string name="settings_traffic_lights_hint">语音地标提示:过红绿灯后转弯。仅英语,默认关闭。</string>
@@ -680,7 +673,6 @@
     <string name="root_voice_tts_desc">语音逐向导航。推荐使用。一次性下载 %1$d MB。</string>
     <!-- format -->
     <string name="root_voice_mic_title">说话搜索</string>
-    <string name="root_voice_mic_desc">不用打字，说话就能搜索。不下载时，麦克风将使用 Google。一次性下载 %1$d MB。</string>
     <!-- format -->
     <string name="root_voice_none_picked">请先勾选一项，或选择“暂不”。</string>
     <string name="mapvm_stop_added">已添加途经点</string>
@@ -706,7 +698,6 @@
     <string name="root_diag_trips_desc">记录您的导航 GPS 轨迹，以便回放行程进行测试。更敏感：您的精确路线。</string>
     <string name="root_diag_save">保存选择</string>
     <string name="root_offline_title">离线地图</string>
-    <string name="root_offline_body">Iraq Maps 从 Google 获取地点、搜索和路线，因此在无信号时只有您已下载的区域可用。立即设置一个区域，以便在失去信号时仍有保障。</string>
     <string name="root_offline_setup">设置离线</string>
     <string name="no_browser_installed">您的设备没有浏览器</string>
     <string name="street_view_none">No Street View imagery here</string>
@@ -807,7 +798,6 @@
     <string name="settings_house_numbers_near">仅在放到最大时</string>
     <string name="settings_house_numbers_normal">正常</string>
     <string name="settings_house_numbers_far">更早显示</string>
-    <string name="settings_house_numbers_hint">门牌号来自 OpenStreetMap，在美国还来自 OpenAddresses。两者都没有号码的建筑不会显示门牌号，但搜索仍可通过 Google 找到该地址。</string>
     <string name="settings_show_pois">显示地点</string>
     <string name="settings_show_pois_hint">浏览地图上的商家和地点图标。关闭后地图更清爽；搜索到的地点仍会显示。</string>
     <string name="settings_places_source">地图上的地点图标</string>
@@ -820,7 +810,6 @@
     <string name="settings_places_source_more">了解详情</string>
     <string name="settings_places_source_more_credit">Overture Maps</string>
     <string name="settings_places_source_more_title">Iraq Maps 的地点数据来自哪里</string>
-    <string name="settings_places_source_more_body">Iraq Maps 的地点数据来自 Overture Maps，这是一个由 Meta、Microsoft 等共同维护的开放商家数据集。Iraq Maps 通过自己的 GitHub 仓库提供该数据，因此您查看了哪里不会被 Meta 或 Google 获知。\n\n数据会随浏览逐步加载，也可随区域一起下载供离线使用。对于 Iraq Maps 尚无数据的区域，地图会回退到 Google。\n\n无论选择哪一项，搜索、地点详情、营业时间、评价和照片始终来自 Google。</string>
     <string name="settings_show_civic">公园、学校和公共场所</string>
     <string name="settings_show_civic_hint">非商家类的地点图标。关闭后仅显示商家。</string>
     <string name="settings_show_transit_stops">公交站点</string>
@@ -948,7 +937,6 @@
     <string name="voice_cmd_eta">到达时间(驾驶时)</string>
     <string name="voice_cmd_hint">说出或在搜索栏输入都可以,使用应用语言或英语。其他内容按普通搜索处理。</string>
     <string name="settings_map_data">地图数据</string>
-    <string name="settings_map_data_hint">地图及其街道、标注和门牌号为 OpenStreetMap 数据，依据 Open Database License 提供，并由 OpenFreeMap 以矢量图块形式提供服务。已覆盖地区地图上的商家为 Overture Maps Foundation 的地点数据（来源于 Meta 和 Microsoft），依据 Community Data License Agreement, Permissive 2.0 提供。地点详情、评价、路线和路况来自 Google。卫星影像来自 Esri 和 Google。</string>
     <string name="settings_map_data_button">OpenStreetMap 版权</string>
     <string name="settings_map_data_overture_button">Overture Maps 许可</string>
     <string name="settings_theme_auto">日夜自动切换</string>
@@ -1101,7 +1089,6 @@
     <string name="settings_speech_preload_hint">在 Iraq Maps 打开时加载语音搜索模型，让麦克风立即开始聆听。在连续两分钟无语音之前，它会占用约 300 MB 内存。关闭时，会在您点按搜索框时加载。内存约 8 GB 及以上的手机默认开启。</string>
     <string name="settings_google_free_links">打开分享的 Google 地图链接</string>
     <string name="settings_google_free_links_hint">Google 地图短链接（maps.app.goo.gl）本身看不出指向哪里。开启后，Iraq Maps 会在不带 Cookie 的情况下向 Google 的短链接服务查询一次，然后用开放数据源打开该地点。完整的 google.com/maps 链接无需查询即可打开。共享列表仍需要 Google。</string>
-    <string name="place_avoid_not_honored">这些路线仍可能经过收费路段、高速公路或轮渡：无法连接 Google 来绕开它们，而开放路线服务做不到。在已下载的区域内，Iraq Maps 可以离线避开它们。</string>
     <string name="settings_road_label_inbar">底栏内</string>
     <string name="settings_faster_auto">自动采用更快路线</string>
     <string name="settings_faster_auto_hint">行驶途中出现更快路线时，如果您几秒内没有回应，就会自动采用。关闭后，未回应的提示会被忽略。无论哪种情况，提示都不会一直停留在地图上等待。</string>
@@ -1374,7 +1361,6 @@
     <string name="settings_map_names_local_english">当地名称和英文</string>
     <string name="settings_map_names_hint">拉丁转写名称在 OpenStreetMap 没有英文名时由机器生成，在希伯来文等一些文字中可读性很差。应用语言和语音不受影响。</string>
     <string name="settings_project">项目</string>
-    <string name="settings_project_hint">源代码、错误报告和讨论都在 GitHub 上。</string>
     <string name="mapvm_rechecking_connection">正在检查网络连接…</string>
     <string name="mapvm_back_online">已恢复联网</string>
     <string name="mapvm_still_offline">仍处于离线状态。网络一恢复，Iraq Maps 就会察觉。</string>

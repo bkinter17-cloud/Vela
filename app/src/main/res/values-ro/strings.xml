@@ -300,7 +300,6 @@
     <string name="settings_house_numbers_near">Numai la apropiere mare</string>
     <string name="settings_house_numbers_normal">Normal</string>
     <string name="settings_house_numbers_far">De la o distanță mai mare</string>
-    <string name="settings_house_numbers_hint">Numerele caselor provin de la OpenStreetMap și, în SUA, de la OpenAddresses. Dacă o clădire nu are un număr în niciuna dintre locuri, aceasta nu va apărea, deși o căutare pe Google va găsi totuși adresa.</string>
     <string name="settings_show_pois">Afișează locurile</string>
     <string name="settings_show_pois_hint">Pictograme pentru afaceri și locuri pe harta de navigare. Dezactivat = o hartă curată; locurile căutate sunt afișate în continuare.</string>
     <string name="settings_places_source">Pictogramele locațiilor pe hartă</string>
@@ -319,7 +318,6 @@
     <string name="settings_directions_language">Limba indicațiilor de orientare</string>
     <string name="settings_directions_same_as_app">La fel ca limba aplicației</string>
     <string name="settings_directions_language_hint">Indicațiile de orientare vocale sunt afișate și rostite. Alege o voce potrivită din biblioteca de voci.</string>
-    <string name="settings_places_source_more_body">Datele despre locațiile Iraq Maps provin de la Overture Maps, un set de date deschis al organizațiilor, gestionat de Meta, Microsoft și alții. Iraq Maps le oferă din propriul depozit GitHub, așa că nimic despre locul căutat nu ajunge la Meta sau Google.\n\nSe încarcă pe măsură ce navighezi și se descarcă împreună cu regiunea pentru utilizare off-line. În cazul în care Iraq Maps nu are încă date pentru o anumită zonă, harta revine la Google.\n\nCăutarea, informațiile despre locații, orele de lucru, recenziile și fotografiile provin întotdeauna de la Google, indiferent de opțiunea aleasă.</string>
     <string name="settings_show_civic">Parcuri, școli și locuri publice</string>
     <string name="settings_show_civic_hint">Strat de locuri necomerciale. Dezactivat = se afișează doar companiile.</string>
     <string name="settings_show_transit_stops">Stații de transport</string>
@@ -720,13 +718,8 @@
     <string name="steps_live_traffic">trafic în timp real</string>
     <string name="steps_close_cd">Închide pașii</string>
     <string name="steps_continue">Continuă</string>
-    <string name="welcome_tagline">Hărți și navigație, fără Google.</string>
     <string name="welcome_feature_no_tracking_title">Fără urmărire</string>
-    <string name="welcome_feature_private_body">Fără cont, fără reclame, fără statistici și fără serverul Iraq Maps.</string>
-    <string name="welcome_feature_places_title">Locuri și trasee reale</string>
-    <string name="welcome_feature_places_body">Căutare în timp real, recenzii, fotografii, informații despre transportul public și indicații de navigare care țin cont de traficul rutier.</string>
     <string name="welcome_feature_open_source_title">Gratuit și cu sursă deschisă</string>
-    <string name="welcome_feature_open_source_body">GPLv3, concepută pentru GrapheneOS și alte telefoane fără servicii Google.</string>
     <string name="welcome_get_started">Să începem</string>
     <string name="welcome_continue">Continuă</string>
     <string name="welcome_cameras_title">Camere pentru plăcuțe</string>
@@ -1039,8 +1032,6 @@
     <string name="settings_voice_volume_louder">Mai tare</string>
     <string name="settings_voice_volume_loudest">Cel mai tare</string>
     <string name="settings_voice_volume_hint">Cât de tare se aud instrucțiunile vocale pe dispozitivul tău media. Nivelurile mai ridicate de volum se aplică vocii Iraq Maps; volumul vocilor sistemului poate fi redus doar.</string>
-    <string name="place_avoid_not_honored">Este posibil ca aceste trasee să includă în continuare porțiuni cu taxă, autostrăzi sau feriboturi: nu s-a putut contacta Google pentru a le ocoli, iar aplicația OpenRouter nu are această posibilitate. Într-o zonă descărcată, Iraq Maps le ocolește în modul off-line.</string>
-    <string name="settings_lists_export_hint">Creează o copie de rezervă a listelor într-un fișier sau restaurează pe un alt dispozitiv. Funcția de import preia, de asemenea, o listă din dosarul „Salvate” al serviciului Google Takeout (un fișier CSV pentru fiecare listă); fiecare locație din aceasta este căutată, așa că este necesară o conexiune la internet.</string>
     <string name="settings_lists_imported">S-au importat %1$d liste</string>
     <string name="settings_takeout_list_default">Listă importată</string>
     <string name="settings_takeout_progress">Căutarea locului %1$d din %2$d</string>
@@ -1154,7 +1145,6 @@
     <string name="shortcut_home">Acasă</string>
     <string name="shortcut_work">Serviciu</string>
     <string name="settings_map_data">Date cartografice</string>
-    <string name="settings_map_data_hint">Harta, străzile, denumirile și numerele caselor sunt date OpenStreetMap, disponibile sub licența Open Database License, furnizate sub formă de plăci vectoriale de către OpenFreeMap. Afacerile de pe hartă din regiunile acoperite sunt date despre locații provenite de la Overture Maps Foundation (sursă: Meta și Microsoft), disponibile sub Acordul de licență pentru date comunitare, Permissive 2.0. Detaliile despre locații, recenziile, rutele și informațiile despre trafic provin de la Google. Imaginile din satelit sunt furnizate de Esri și Google. Modul în care vocea pronunță aproximativ 3.500 de denumiri de locuri provine din Wikipedia în limba engleză și de la colaboratorii acesteia, sub licența CC BY-SA 4.0.</string>
     <string name="settings_map_data_button">Drepturi de autor OpenStreetMap</string>
     <string name="settings_map_data_overture_button">Licența Overture Maps</string>
     <string name="settings_map_data_fuel_gb">Prețurile combustibililor din Regatul Unit provin din instrumentul „Fuel Finder” al guvernului britanic, republicat de matthewgall/fuelfinder-archive pe GitHub. Conține informații din sectorul public licențiate în conformitate cu Open Government Licence v3.0.</string>
@@ -1210,9 +1200,7 @@
     <string name="settings_hub_search_sub">Căutarea vocală, modelele de recunoaștere a vorbirii și butoanele de căutare rapidă</string>
     <string name="settings_hub_offline_sub">Hărți off-line, trasee, locuri</string>
     <string name="settings_hub_saved_sub">Listele tale, export, istoricul parcărilor</string>
-    <string name="settings_hub_privacy_sub">Ce obține Google, ștergerea istoricului</string>
     <string name="settings_hub_diagnostics_sub">Rapoarte de erori, sesiuni, modul demo, experimente</string>
-    <string name="settings_hub_about_sub">Versiune, actualizări, asistență</string>
     <string name="settings_theme_amoled">AMOLED negru</string>
     <string name="settings_map_theme_title">Hartă</string>
     <string name="settings_map_theme_follow">La fel ca în aplicație</string>
@@ -1265,8 +1253,6 @@
     <string name="settings_map_names_local_english">Local și engleză</string>
     <string name="settings_map_names_hint">Denumirile în alfabetul latin sunt generate automat în cazul în care OpenStreetMap nu conține o denumire în limba engleză și sunt greu de citit pentru limba ebraică și alte sisteme de scriere. Limba aplicației și vocea nu se modifică.</string>
     <string name="settings_project">Proiect</string>
-    <string name="settings_project_hint">Site-ul web conține o prezentare generală și o secțiune dedicată presei. Codul sursă, rapoartele de erori și discuțiile se găsesc pe GitHub.</string>
-    <string name="settings_project_site_button">Pagina web</string>
     <string name="mapvm_rechecking_connection">Se verifică conexiunea…</string>
     <string name="mapvm_back_online">Din nou online</string>
     <string name="mapvm_still_offline">Încă fără conexiune. Iraq Maps va observa imediat ce conexiunea va fi restabilită.</string>
@@ -1321,10 +1307,8 @@
     <string name="root_voice_tts_title">Rostește indicațiile cu voce tare</string>
     <string name="root_voice_tts_desc">Indicații vocale la fiecare viraj. Recomandat. Descărcare unică de %1$d MB.</string>
     <string name="root_voice_mic_title">Căutare prin comandă vocală</string>
-    <string name="root_voice_mic_desc">Efectuează căutări prin dictare, fără a tasta. În lipsa acestei funcții, microfonul utilizează Google. Descărcare unică de %1$d MB.</string>
     <string name="root_voice_none_picked">Bifează mai întâi o opțiune sau selectează „Nu acum”.</string>
     <string name="root_offline_title">Hărți off-line</string>
-    <string name="root_offline_body">Iraq Maps preia locațiile, rezultatele căutării și indicațiile de orientare de la Google, așa că, în absența semnalului, vor funcționa doar zonele pe care le-ai descărcat. Configurează o zonă chiar acum, pentru a avea acoperirea atunci când rămâi fără semnal.</string>
     <string name="root_offline_setup">Configurare off-line</string>
     <string name="mapvm_stop_added">Oprire adăugată</string>
     <string name="voice_error_title">Căutarea vocală nu a pornit</string>
