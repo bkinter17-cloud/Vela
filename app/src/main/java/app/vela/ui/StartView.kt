@@ -61,6 +61,10 @@ object StartView {
     const val PLACE = "place"
     const val DRIVE = "drive"
 
+    /** Iraq Maps: where the map opens when nothing else is known (country view; zoom is a
+     *  first estimate for a portrait phone and must be checked on a device). */
+    val IRAQ = StartCamera(LatLng(33.2, 43.7), 4.9)
+
     /** Home opens at the street zoom a start on a fix uses. */
     const val HOME_ZOOM = 15.5
 
@@ -152,8 +156,11 @@ fun startFor(
         else -> null
     }
     if (picked != null) return Start(picked.center, picked.zoom, hold = true)
-    val standIn = last?.let { Start(it.center, it.zoom, hold = true, untilFix = true) }
-    val here = if (locationOn) fix?.let { Start(it) } ?: standIn ?: Start(null)
-    else standIn ?: Start(fix)
+    val lastStandIn = last?.let { Start(it.center, it.zoom, hold = true, untilFix = true) }
+    // Iraq Maps: with nothing else known the map opens on Iraq (not the world) and moves to
+    // the first fix, like any other stand-in.
+    val iraq = Start(StartView.IRAQ.center, StartView.IRAQ.zoom, hold = true, untilFix = true)
+    val here = if (locationOn) fix?.let { Start(it) } ?: lastStandIn ?: iraq
+    else lastStandIn ?: fix?.let { Start(it) } ?: iraq
     return if (mode == StartView.DRIVE) here.copy(drive = true) else here
 }

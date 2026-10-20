@@ -43,9 +43,10 @@ class StartViewTest {
         assertEquals(Start(left.center, left.zoom, hold = true, untilFix = true), open(fix = null))
     }
 
-    @Test fun `nothing known is the world view`() {
-        assertEquals(Start(null), open(fix = null, last = null))
-        assertEquals(Start(null), open(locationOn = false, fix = null, last = null))
+    @Test fun `nothing known opens on Iraq and waits for a fix`() {
+        val iraq = Start(StartView.IRAQ.center, StartView.IRAQ.zoom, hold = true, untilFix = true)
+        assertEquals(iraq, open(fix = null, last = null))
+        assertEquals(iraq, open(locationOn = false, fix = null, last = null))
     }
 
     @Test fun `where I left the map holds that view whether or not location is on`() {
