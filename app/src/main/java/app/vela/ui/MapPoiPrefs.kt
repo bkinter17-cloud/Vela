@@ -60,7 +60,8 @@ object MapPoiPrefs {
         showCivic.value = p.getBoolean(KEY_CIVIC, true)
         iconScale.floatValue = p.getFloat(KEY_SCALE, 1.0f)
         explicitSource = p.getString(KEY_PLACES_SOURCE, null)
-        placesSource.value = explicitSource ?: remoteDefault
+        // Iraq Maps: fixed to the open places layer (no Google places exist to pick).
+        placesSource.value = SOURCE_OPEN
         placesWithDownloads.value = p.getBoolean(KEY_PLACES_WITH_DOWNLOADS, true)
         lookupTappedPlaces.value = p.getBoolean(KEY_LOOKUP_TAPPED, true)
         navTapPlaces.value = p.getBoolean(KEY_NAV_TAP_PLACES, false)
@@ -97,16 +98,15 @@ object MapPoiPrefs {
     }
 
     fun setPlacesSource(context: Context, value: String) {
-        explicitSource = value
-        placesSource.value = value
-        prefs(context).edit().putString(KEY_PLACES_SOURCE, value).apply()
+        // Iraq Maps: ignored. The source stays SOURCE_OPEN; Google/both would blank the map.
+        placesSource.value = SOURCE_OPEN
     }
 
     /** The signed bundle's fleet default (MapViewModel pushes it at init and after each refresh);
      *  takes effect only for people who never made their own pick. */
     fun setRemoteDefault(value: String) {
         remoteDefault = value
-        if (explicitSource == null) placesSource.value = value
+        placesSource.value = SOURCE_OPEN
     }
 
     fun setShowPois(context: Context, value: Boolean) {

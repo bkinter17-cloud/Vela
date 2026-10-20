@@ -32,13 +32,14 @@ object AppLocale {
     // "he" is the modern Hebrew code the picker + NavStrings use; the Android RESOURCES live in the
     // legacy-qualifier folder res/values-iw (AAPT's Hebrew qualifier), and the platform maps a "he"
     // locale onto values-iw, so the two agree. (Same legacy-pair handling as id/in, yi/ji.)
-    val SUPPORTED = listOf("en", "fr", "de", "es", "it", "pt", "pt-BR", "nl", "ru", "pl", "sv", "uk", "hu", "ro", "et", "zh", "zh-TW", "ja", "he")
+    val SUPPORTED = listOf("ar", "en", "fr", "de", "es", "it", "pt", "pt-BR", "nl", "ru", "pl", "sv", "uk", "hu", "ro", "et", "zh", "zh-TW", "ja", "he")
 
     private val ENDONYMS = mapOf(
         "en" to "English", "fr" to "Français", "de" to "Deutsch", "es" to "Español",
         "it" to "Italiano", "pt" to "Português (Portugal)", "pt-BR" to "Português (Brasil)", "nl" to "Nederlands", "ru" to "Русский",
         "pl" to "Polski", "sv" to "Svenska", "uk" to "Українська", "hu" to "Magyar", "ro" to "Română", "et" to "Eesti",
         "zh" to "简体中文", "zh-TW" to "繁體中文（台灣）", "ja" to "日本語", "he" to "עברית",
+        "ar" to "العربية",
     )
 
     /** The language's own name (endonym) — what a speaker of it expects to see in a language list. */
@@ -59,7 +60,7 @@ object AppLocale {
     }
 
     fun init(context: Context) {
-        language.value = prefs(context).getString(KEY, "") ?: ""
+        language.value = storedLanguage(context)
         directions.value = prefs(context).getString(KEY_DIRECTIONS, "") ?: ""
         apply()
     }
@@ -108,7 +109,7 @@ object AppLocale {
      *  (user 2026-07-10). */
     fun wrap(base: Context): Context {
         if (systemDefault == null) systemDefault = Locale.getDefault()
-        val lang = prefs(base).getString(KEY, "").orEmpty()
+        val lang = storedLanguage(base)
         if (lang.isBlank()) {
             systemDefault?.let { if (Locale.getDefault() != it) Locale.setDefault(it) }
             syncAcceptLanguage()
@@ -140,6 +141,15 @@ object AppLocale {
     }
 
     private fun prefs(c: Context) = c.getSharedPreferences("vela_settings", Context.MODE_PRIVATE)
+
+    /** Iraq Maps: until the person picks a language (including "Follow system", stored as an empty
+     *  string) the app is Arabic. */
+    private fun storedLanguage(c: Context): String {
+        val p = prefs(c)
+        return if (p.contains(KEY)) p.getString(KEY, "").orEmpty() else DEFAULT_LANGUAGE
+    }
+
+    private const val DEFAULT_LANGUAGE = "ar"
     private const val KEY = "app_language"
     private const val KEY_DIRECTIONS = "directions_language"
 }

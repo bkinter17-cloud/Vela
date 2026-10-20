@@ -2531,6 +2531,165 @@ object RoNavStrings : NavStrings {
     }
 }
 
+/**
+ * Arabic (Iraq Maps). Right-to-left; road and destination names are DATA and are inserted
+ * unchanged. Every template inserts names with `${...}` braces so no Arabic letter can be read
+ * as part of a Kotlin identifier. Written without a compiler or an Arabic-speaking reviewer:
+ * the wording needs a native-speaker pass before release.
+ */
+object ArNavStrings : NavStrings {
+    override val locale: Locale = Locale("ar", "IQ")
+
+    // Adverbial direction after a verb ("انعطف يساراً").
+    private fun modWord(mod: String?): String = when ((mod ?: "").trim().lowercase()) {
+        "left" -> "يساراً"
+        "right" -> "يميناً"
+        "slight left" -> "قليلاً نحو اليسار"
+        "slight right" -> "قليلاً نحو اليمين"
+        "sharp left" -> "بحدة نحو اليسار"
+        "sharp right" -> "بحدة نحو اليمين"
+        "straight" -> "للأمام"
+        else -> ""
+    }
+
+    // Masculine ordinals for roundabout exits ("المخرج الثالث"); falls back to "رقم N".
+    private fun exitOrdinal(n: Int): String = when (n) {
+        1 -> "الأول"; 2 -> "الثاني"; 3 -> "الثالث"; 4 -> "الرابع"; 5 -> "الخامس"
+        6 -> "السادس"; 7 -> "السابع"; 8 -> "الثامن"; 9 -> "التاسع"; 10 -> "العاشر"
+        else -> "رقم ${n}"
+    }
+
+    override fun phrase(type: String, mod: String?, road: String?, dest: String?, exitNo: String?, rbExit: Int?): String {
+        val onto = if (road != null) " إلى ${road}" else ""
+        val along = if (road != null) " على ${road}" else ""
+        val toward = when {
+            dest != null -> " باتجاه ${dest}"
+            road != null -> " إلى ${road}"
+            else -> ""
+        }
+        val m = modWord(mod)
+        val uturn = (mod ?: "").trim().lowercase() == "uturn"
+        return when (type) {
+            "depart" -> if (road != null) "ابدأ السير على ${road}" else "ابدأ مسارك"
+            "arrive" -> "لقد وصلت إلى وجهتك"
+            "turn", "end of road" -> if (uturn) "استدر للخلف${onto}" else ("انعطف ${m}").trim() + onto
+            "continue", "new name" -> if (m.isNotBlank() && m != "للأمام") ("انحرف ${m}").trim() + onto else "تابع${along}"
+            "merge" -> "اندمج${toward}"
+            "on ramp", "ramp" -> when {
+                mod?.contains("right") == true -> "خذ المنحدر على اليمين${toward}"
+                mod?.contains("left") == true -> "خذ المنحدر على اليسار${toward}"
+                else -> "خذ المنحدر${toward}"
+            }
+            "off ramp" -> if (exitNo != null) "خذ المخرج ${exitNo}${toward}" else "خذ المخرج${toward}"
+            // The side is read from the modifier ("slight left" etc.), as in every other language.
+            "fork" -> when {
+                mod?.contains("left") == true -> "ابقَ على اليسار${toward}"
+                mod?.contains("right") == true -> "ابقَ على اليمين${toward}"
+                else -> "تابع${toward}"
+            }
+            "roundabout", "rotary", "exit roundabout", "exit rotary" -> when {
+                rbExit == null -> "ادخل الدوّار${onto}"
+                mod == "straight" -> "عند الدوّار، تابع للأمام${onto}، المخرج ${exitOrdinal(rbExit)}"
+                else -> "عند الدوّار، خذ المخرج ${exitOrdinal(rbExit)}${onto}"
+            }
+            "roundabout turn" -> ("عند الدوّار، انعطف ${m}").trim() + onto
+            "uturn" -> "استدر للخلف${onto}"
+            else -> if (uturn) "استدر للخلف${onto}" else if (m.isNotBlank()) ("انعطف ${m}").trim() + onto else "تابع${along}"
+        }
+    }
+
+    override fun spokenDistance(meters: Double, imperial: Boolean): String = if (imperial) {
+        val feet = meters * 3.28084
+        if (feet < 800) {
+            val n = if (feet < 100) maxOf(10, (feet / 10).roundToInt() * 10) else (feet / 50).roundToInt() * 50
+            "${n} قدماً"
+        } else when ((meters / 402.336).roundToInt().coerceAtLeast(1)) {
+            1 -> "ربع ميل"
+            2 -> "نصف ميل"
+            3 -> "ثلاثة أرباع الميل"
+            else -> {
+                val miles = (meters / 1609.34 * 10).roundToInt() / 10.0
+                if (miles == 1.0) "ميل واحد" else "${miles} ميل"
+            }
+        }
+    } else {
+        if (meters < 950) {
+            val n = (meters / 10).roundToInt() * 10
+            when {
+                n in 3..10 -> "${n} أمتار"
+                n < 100 -> "${n} متراً"
+                else -> "${n} متر"
+            }
+        } else {
+            val km = (meters / 100).roundToInt() / 10.0
+            when {
+                km == 1.0 -> "كيلومتر واحد"
+                km == 2.0 -> "كيلومترين"
+                km % 1.0 == 0.0 && km <= 10.0 -> "${km.toInt()} كيلومترات"
+                km % 1.0 == 0.0 -> "${km.toInt()} كيلومتراً"
+                else -> "${km} كيلومتر"
+            }
+        }
+    }
+
+    override fun inThen(distancePhrase: String, instruction: String): String = "بعد ${distancePhrase}، ${instruction}"
+
+    override fun arrived(): String = "لقد وصلت."
+
+    override fun destinationSide(left: Boolean): String = if (left) "وجهتك على اليسار" else "وجهتك على اليمين"
+
+    override fun startNav(firstInstruction: String): String = "بدء الملاحة. ${firstInstruction}"
+
+    override fun reachedStop(label: String): String =
+        if (label.isNotBlank()) "لقد وصلت إلى ${label}" else "لقد وصلت إلى محطتك"
+
+    override fun stopAhead(label: String, left: Boolean?): String {
+        val who = label.ifBlank { "محطتك" }
+        return when (left) {
+            true -> "${who} ستكون على يسارك"
+            false -> "${who} ستكون على يمينك"
+            null -> "${who} أمامك"
+        }
+    }
+
+    override fun thenStop(instruction: String, label: String, left: Boolean?): String =
+        "${instruction}، ثم " + stopAhead(label.ifBlank { "محطتك" }, left)
+
+    override fun intoLot(turnLeft: Boolean): String =
+        "انعطف " + (if (turnLeft) "يساراً" else "يميناً") + " إلى موقف السيارات"
+
+    override fun thenNext(instruction: String, next: String): String = "${instruction}، ثم ${next}"
+
+    override fun intoLotThen(turnLeft: Boolean, label: String, left: Boolean?): String {
+        val where = when (left) { true -> "على يسارك"; false -> "على يمينك"; null -> "أمامك" }
+        return intoLot(turnLeft) + "، ثم ${label.ifBlank { "محطتك" }} ${where}"
+    }
+
+    override fun fasterRoute(firstInstruction: String): String = "اعتماد المسار الأسرع. ${firstInstruction}"
+
+    override fun voiceTest(): String = "الإرشاد الصوتي يعمل. بعد 400 متر، انعطف يميناً."
+
+    override fun rerouting(): String = "جارٍ إعادة حساب المسار"
+
+    override fun fasterRouteAvailable(minutes: Int): String = when {
+        minutes == 1 -> "يتوفر مسار أسرع، يوفّر نحو دقيقة"
+        minutes == 2 -> "يتوفر مسار أسرع، يوفّر نحو دقيقتين"
+        minutes in 3..10 -> "يتوفر مسار أسرع، يوفّر نحو ${minutes} دقائق"
+        else -> "يتوفر مسار أسرع، يوفّر نحو ${minutes} دقيقة"
+    }
+
+    override fun stopsNotIncluded(): String = "تعذّر تضمين محطاتك في هذا المسار. سأواصل المحاولة."
+
+    override fun leftYourRoute(): String = "خرجت عن مسارك. سيُعتمد أسرع طريق."
+
+    override fun destinationAhead(): String = "ستكون وجهتك أمامك"
+
+    override fun useLanes(side: LaneSide, count: Int): String {
+        val s = when (side) { LaneSide.LEFT -> "اليسرى"; LaneSide.RIGHT -> "اليمنى"; LaneSide.CENTER -> "الوسطى" }
+        return if (count > 1) "استخدم الحارات ${s} (${count})" else "استخدم الحارة ${s}"
+    }
+}
+
 object NavStringsRegistry {
     @Volatile
     private var active: NavStrings = EnNavStrings
@@ -2569,6 +2728,7 @@ object NavStringsRegistry {
         "zh" -> ZhNavStrings
         "zh-tw" -> ZhTwNavStrings
         "ja" -> JaNavStrings
+        "ar" -> ArNavStrings
         "he", "iw" -> HeNavStrings // JDK 17+ normalizes the old code "iw" → "he"; accept both
         else -> EnNavStrings
     }

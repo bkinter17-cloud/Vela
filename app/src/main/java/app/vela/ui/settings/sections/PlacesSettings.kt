@@ -17,13 +17,15 @@ import app.vela.ui.settings.ToggleRow
  * Places sub-screen (was Place pages; 2026-09-17 settings reshuffle): where the map's places come
  * from, what the map draws for them, and the five place-page content toggles.
  */
+private const val SHOW_PLACES_SOURCE = false
+
 @Composable
 internal fun PlacesSettingsScreen(onBack: () -> Unit) {
     val context = LocalContext.current
     SettingsScaffold(stringResource(R.string.settings_places), onBack) { topRow ->
         Spacer(Modifier.height(4.dp))
-        PlacesSourceGroup(topRow)
-        Spacer(Modifier.height(8.dp))
+        // Iraq Maps: the source picker is hidden (fixed to the open layer, see MapPoiPrefs).
+        if (SHOW_PLACES_SOURCE) { PlacesSourceGroup(topRow); Spacer(Modifier.height(8.dp)) }
         PlacesOnMapGroup()
         Spacer(Modifier.height(8.dp))
         SettingsGroup(title = stringResource(R.string.settings_place_pages)) {

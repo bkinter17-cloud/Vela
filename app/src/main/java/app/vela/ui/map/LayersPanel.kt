@@ -113,6 +113,8 @@ internal fun BoxScope.LayersCorner(vm: MapViewModel, landscapeChrome: Boolean, d
 }
 
 /** Tiles per row. Four keeps the panel inside a 4a-sized portrait screen under the button. */
+// Iraq Maps: the places-source picker (open / Google / both) is hidden; the source is fixed.
+private const val SHOW_PLACES_SOURCE = false
 private const val COLUMNS = 4
 private val TILE_W = 68.dp
 private val PICTURE_H = 48.dp
@@ -184,6 +186,7 @@ private fun LayersPanel(vm: MapViewModel, onClose: () -> Unit) {
         // (issue #626): the same holders Settings > Places and Privacy flip. The places choice only
         // changes the map's pins; search still asks Google unless Google-free is on, which is why
         // that switch sits here too.
+        if (SHOW_PLACES_SOURCE) {
         GroupTitle(stringResource(R.string.map_layers_places_title))
         TileRows(
             listOf(
@@ -194,6 +197,7 @@ private fun LayersPanel(vm: MapViewModel, onClose: () -> Unit) {
                 Tile(stringResource(label), placesSource == id, { MapPoiPrefs.setPlacesSource(ctx, id) }) { GlyphDisc(glyph, it) }
             },
         )
+        }
         Spacer(Modifier.height(4.dp))
         // Driving mode (issue #727): the map alone in the drive's layout, from the map's own
         // panel. Its bar's X comes back to this button.

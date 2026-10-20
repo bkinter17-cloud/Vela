@@ -152,7 +152,7 @@ class NavStringsTest {
     }
 
     @Test fun `every registered language produces non-blank nav strings and keeps road names`() {
-        val langs = listOf("fr", "de", "es", "it", "pt", "nl", "ru", "pl", "sv", "uk", "hu", "ro", "zh", "ja", "he")
+        val langs = listOf("fr", "de", "es", "it", "pt", "nl", "ru", "pl", "sv", "uk", "hu", "ro", "zh", "ja", "he", "ar")
         for (code in langs) {
             val ns = NavStringsRegistry.forLanguage(code)
             assertEquals("$code should map to its own NavStrings", code, ns.locale.language)
@@ -191,6 +191,7 @@ class NavStringsTest {
             // substring of the emitted "ימינה" (medial נ) — so match the emitted forms themselves.
             "sv" to ("vänster" to "höger"), "uk" to ("лів" to "прав"), "he" to ("שמאלה" to "ימינה"),
             "ro" to ("stânga" to "dreapta"),
+            "ar" to ("اليسار" to "اليمين"),
         )
         for ((code, words) in sideWords) {
             val ns = NavStringsRegistry.forLanguage(code)

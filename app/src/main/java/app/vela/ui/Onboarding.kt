@@ -76,8 +76,8 @@ object Onboarding {
             p.edit().putLong("first_ms", firstMs).apply()
         }
         val donatePromptDone = p.getBoolean("donate_prompt_done", false)
-        showDonatePrompt.value = welcomeDone.value && !donatePromptDone &&
-            (System.currentTimeMillis() - firstMs) >= WEEK_MS
+        // Iraq Maps: the upstream donation prompt is removed (it would send people to the original author).
+        showDonatePrompt.value = false
 
         // Location rationale: show once, unless already granted or answered. Granted counts as done
         // (never nag someone who allowed it). On a brand-new install welcomeDone is still false here →
