@@ -61,6 +61,10 @@ class SelfUpdater @Inject constructor(
         const val CHANNEL_NIGHTLY = "nightly"
         const val CHANNEL_CANARY = "canary"
 
+        /** Iraq Maps: off. The checks below read the UPSTREAM Vela repository (VelaLinks.api) and
+         *  could offer Vela's own APK. Turn on only after VelaLinks points at Iraq Maps' own releases. */
+        @Volatile var enabled: Boolean = false
+
         /** The picked update channel, migrating the old boolean nightly toggle in place. */
         fun channel(prefs: android.content.SharedPreferences): String =
             prefs.getString("update_channel", null)
@@ -74,6 +78,7 @@ class SelfUpdater @Inject constructor(
      *  changes), falling back to the newest nightly when that is ahead so a stale canary
      *  never strands its users behind the fleet. */
     suspend fun check(installedVersionCode: Int, channel: String = CHANNEL_STABLE): UpdateInfo? = withContext(Dispatchers.IO) {
+        if (!enabled) return@withContext null
         val currentVersionCode = legacyCode(installedVersionCode)
         runCatching {
             fun releaseToInfo(o: JSONObject): UpdateInfo? {

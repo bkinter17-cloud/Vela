@@ -81,7 +81,8 @@ fun WelcomeScreen(vm: app.vela.ui.map.MapViewModel, onGetStarted: () -> Unit) {
         onGetStarted()
     }
     when (step) {
-        0 -> WelcomeIntro(onNext = { step = 1 })
+        // Iraq Maps: no Google choice to make, so the intro finishes onboarding directly.
+        0 -> WelcomeIntro(onNext = { finish(useGoogle = false) })
         1 -> {
             androidx.activity.compose.BackHandler { step = 0 }
             GoogleChoice(

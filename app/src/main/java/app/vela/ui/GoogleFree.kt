@@ -11,29 +11,33 @@ import androidx.compose.runtime.mutableStateOf
  * lookup, Street View) on this holder. What it costs is in the settings hint and in docs/FAQ.md.
  */
 object GoogleFree {
-    val on = mutableStateOf(false)
+    // Iraq Maps: permanently on. The upstream switch is kept as a type so the many call sites
+    // keep compiling, but nothing can turn it off: no Google host is ever contacted.
+    val on = mutableStateOf(true)
 
     /** While [on]: may a shared SHORT Google Maps link (maps.app.goo.gl) still be opened by asking
      *  Google's shortener where it points (one cookieless request, see core ShortLinks)? ON by
      *  default (user 2026-09-22): the alternative is not being able to view a link someone sent.
      *  Off, such a link is refused with a toast. Full google.com/maps links never need it. */
-    val resolveLinks = mutableStateOf(true)
+    // Iraq Maps: false and fixed. Resolving a goo.gl short link asks Google where it points.
+    val resolveLinks = mutableStateOf(false)
 
+    @Suppress("UNUSED_PARAMETER")
     fun setResolveLinks(context: Context, value: Boolean) {
-        resolveLinks.value = value
-        prefs(context).edit().putBoolean(KEY_LINKS, value).apply()
+        resolveLinks.value = false
     }
 
     fun init(context: Context) {
-        resolveLinks.value = prefs(context).getBoolean(KEY_LINKS, true)
-        on.value = prefs(context).getBoolean(KEY, false)
-        app.vela.core.data.NoGoogle.enabled = on.value
+        resolveLinks.value = false
+        on.value = true
+        app.vela.core.data.NoGoogle.enabled = true
     }
 
+    @Suppress("UNUSED_PARAMETER")
     fun set(context: Context, value: Boolean) {
-        on.value = value
-        app.vela.core.data.NoGoogle.enabled = value
-        prefs(context).edit().putBoolean(KEY, value).apply()
+        // Ignored on purpose: the Google-free state is not a user setting in Iraq Maps.
+        on.value = true
+        app.vela.core.data.NoGoogle.enabled = true
     }
 
     private fun prefs(c: Context) = c.getSharedPreferences("vela_settings", Context.MODE_PRIVATE)

@@ -195,7 +195,6 @@ private fun LayersPanel(vm: MapViewModel, onClose: () -> Unit) {
             },
         )
         Spacer(Modifier.height(4.dp))
-        SwitchRow(stringResource(R.string.settings_google_free), GoogleFree.on.value) { GoogleFree.set(ctx, it) }
         // Driving mode (issue #727): the map alone in the drive's layout, from the map's own
         // panel. Its bar's X comes back to this button.
         ActionRow(stringResource(R.string.driving_mode), Sym.DirectionsCar) { onClose(); vm.enterDrivingMode() }

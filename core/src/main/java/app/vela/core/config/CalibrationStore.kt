@@ -54,6 +54,10 @@ class CalibrationStore @Inject constructor(
     fun current(): Calibration = active
 
     suspend fun refresh() {
+        // Iraq Maps: the signed remote bundle is Vela's maintainer's channel (it can change links
+        // and tuning at every launch). Off: the bundled DEFAULT is the only config. Flip
+        // [remoteRefreshEnabled] only after pinning Iraq Maps' OWN signing key.
+        if (!remoteRefreshEnabled) return
         if (refreshed) return
         refreshed = true
         withContext(Dispatchers.IO) {
@@ -128,6 +132,8 @@ class CalibrationStore @Inject constructor(
     }
 
     companion object {
+        @Volatile var remoteRefreshEnabled: Boolean = false
+
         private val BUNDLE_JSON = Json { ignoreUnknownKeys = true }
 
         /** Lenient JSON → Calibration: any missing field falls back to [DEFAULT], so

@@ -12,5 +12,7 @@ package app.vela.core.data
  * pushed down here, because `:core` never reads an app holder.
  */
 object NoGoogle {
-    @Volatile var enabled: Boolean = false
+    // Iraq Maps: ON by default and never switched off by the app (see app.vela.ui.GoogleFree).
+    // Defense in depth: even if the app layer forgot to push the flag, :core stays Google-free.
+    @Volatile var enabled: Boolean = true
 }
