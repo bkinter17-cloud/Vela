@@ -43,6 +43,9 @@ import app.vela.ui.settings.ToggleRow
 import app.vela.ui.dpadHighlight
 import app.vela.ui.dpadRowSibling
 
+// Iraq Maps: the upstream donation card is hidden (it opens the ORIGINAL author's donate page).
+private const val SHOW_DONATE = false
+
 /** About sub-screen: the project blurb, support/donate, version + the in-app updater. */
 @Composable
 internal fun AboutSettingsScreen(vm: MapViewModel, onBack: () -> Unit) {
@@ -53,7 +56,7 @@ internal fun AboutSettingsScreen(vm: MapViewModel, onBack: () -> Unit) {
         Spacer(Modifier.height(4.dp))
         PageIntro(stringResource(R.string.settings_about_hint))
         Spacer(Modifier.height(8.dp))
-        SettingsGroup(title = stringResource(R.string.settings_support)) {
+        if (SHOW_DONATE) SettingsGroup(title = stringResource(R.string.settings_support)) {
         androidx.compose.foundation.layout.Column(Modifier.padding(horizontal = 16.dp)) {
         Hint(stringResource(R.string.settings_support_hint))
         Spacer(Modifier.height(4.dp))
@@ -206,6 +209,8 @@ Onboarding.openDonate(context)
             onCheckedChange = { app.vela.ui.WhatsNew.setEnabled(context, it) },
         )
         GroupDivider()
+        // Iraq Maps: the whole updater block is shown only while SelfUpdater.enabled (off by default).
+        if (app.vela.update.SelfUpdater.enabled) {
         // Self-updater: a launch check (throttled to ~daily) plus a manual check here.
         // The system installer does the install either way.
         var selfUpdate by remember { mutableStateOf(prefs.getBoolean("self_update_check", true)) }
@@ -292,6 +297,7 @@ Onboarding.openDonate(context)
         }
         updateStatus?.let { Hint(it) }
         Spacer(Modifier.height(10.dp))
+        }
         }
         // Breathing room under the last control so the button doesn't sit right on the
         // gesture bar at the end of the scroll.
