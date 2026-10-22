@@ -7,7 +7,6 @@ on:
   workflow_dispatch:
   push:
     branches: [ feature/iraq-maps ]
-    paths-ignore: [ '**.md', 'docs/**' ]
 
 permissions:
   contents: read
