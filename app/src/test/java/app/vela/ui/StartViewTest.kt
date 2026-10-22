@@ -95,7 +95,8 @@ class StartViewTest {
         )
         assertEquals(Start(left.center, left.zoom, hold = true, untilFix = true, drive = true), open(mode = StartView.DRIVE, fix = null))
         assertEquals(Start(davis, drive = true), open(mode = StartView.DRIVE, locationOn = false, last = null))
-        assertEquals(Start(null, drive = true), open(mode = StartView.DRIVE, fix = null, last = null))
+        val iraqDrive = Start(StartView.IRAQ.center, StartView.IRAQ.zoom, hold = true, untilFix = true, drive = true)
+        assertEquals(iraqDrive, open(mode = StartView.DRIVE, fix = null, last = null))
         // Home and the picked view are not read: driving mode is where you are.
         assertEquals(open(mode = StartView.DRIVE), open(mode = StartView.DRIVE, home = null, place = null))
     }
